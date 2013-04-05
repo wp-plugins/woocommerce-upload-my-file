@@ -184,7 +184,7 @@ jQuery(document).ready(function(){
 							<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fgeevvormgeeving&amp;width=220&amp;height=62&amp;show_faces=false&amp;colorscheme=light&amp;stream=false&amp;border_color&amp;header=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:62px;" allowTransparency="true"></iframe>
 							<p><?php _e( 'Or', 'woocommerce-umf' ); ?></p>
 							<ul style="list-style:square;padding-left:20px;margin-top:-10px;">
-								<li><a href="http://wordpress.org/extend/plugins/woocommerce-umf/" target=_blank title="Woocommerce Upload My File"><?php _e( 'Rate the plugin 5&#9733; on WordPress.org', 'woocommerce-umf' ); ?></a></li>
+								<li><a href="http://wordpress.org/extend/plugins/woocommerce-upload-my-file/" target=_blank title="Woocommerce Upload My File"><?php _e( 'Rate the plugin 5&#9733; on WordPress.org', 'woocommerce-umf' ); ?></a></li>
 								<li><a href="http://www.geev.nl/wordpress-plugins/woocommerce-upload-my-file/" target=_blank title="Woocommerce Upload My File"><?php _e( 'Blog about it & link to the plugin page', 'woocommerce-umf' ); ?></a></li>
 							</ul>
 						</div>
