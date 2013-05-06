@@ -170,7 +170,7 @@ jQuery(document).ready(function(){
 					<div class="postbox">
 						<h3><?php _e( 'Buy Pro!', 'woocommerce-umf' ); ?></h3>
 						<div class="inside umf-preview">
-							<p><?php echo __( 'Check out our ', 'woocommerce-umf' ); ?> <a href="http://www.geev.nl/wordpress-plugins/woocommerce-upload-my-file/">website</a> <?php _e('to find out more about WooCommerce Upload My File Pro.', 'woocommerce-umf' );?></p>
+							<p><?php echo __( 'Check out our ', 'woocommerce-umf' ); ?> <a href="http://wordpress.geev.nl/product/woocommerce-upload-my-file/">website</a> <?php _e('to find out more about WooCommerce Upload My File Pro.', 'woocommerce-umf' );?></p>
 							<p><?php _e('For only &euro; 25,00 you will get a lot of features and access to our support section.', 'woocommerce-umf' );?></p>
 							<p><?php _e('A couple of features:', 'woocommerce-umf' );?>
 							<ul style="list-style:square;padding-left:20px;margin-top:-10px;"><li><?php _e('Allow more than one upload per product', 'woocommerce-umf' );?></li><li><?php _e('White or blacklist file-types', 'woocommerce-umf' );?></li><li><?php _e('Let users delete files', 'woocommerce-umf' );?></li><li><?php _e('Default enable file upload for products', 'woocommerce-umf' );?></li><li><?php _e('Define your own upload path', 'woocommerce-umf' );?></li></ul>
@@ -185,7 +185,7 @@ jQuery(document).ready(function(){
 							<p><?php _e( 'Or', 'woocommerce-umf' ); ?></p>
 							<ul style="list-style:square;padding-left:20px;margin-top:-10px;">
 								<li><a href="http://wordpress.org/extend/plugins/woocommerce-upload-my-file/" target=_blank title="Woocommerce Upload My File"><?php _e( 'Rate the plugin 5&#9733; on WordPress.org', 'woocommerce-umf' ); ?></a></li>
-								<li><a href="http://www.geev.nl/wordpress-plugins/woocommerce-upload-my-file/" target=_blank title="Woocommerce Upload My File"><?php _e( 'Blog about it & link to the plugin page', 'woocommerce-umf' ); ?></a></li>
+								<li><a href="http://wordpress.geev.nl/product/woocommerce-upload-my-file/" target=_blank title="Woocommerce Upload My File"><?php _e( 'Blog about it & link to the plugin page', 'woocommerce-umf' ); ?></a></li>
 							</ul>
 						</div>
 					</div>
