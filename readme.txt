@@ -22,7 +22,8 @@ For more information, check out [our website](http://wordpress.geev.nl/product/w
 
 This free version may be used as is. If you want more options and support you can buy WooCommerce Upload My File Pro for only &euro; 25,00.
 
-**PRO version **
+**PRO version**
+
 With our PRO version it's possible to upload more than one file per product, whitelist or blacklist file types, let users delete files, get a preview of uploaded files and images (thumbs), specifiy file upload titles (example: Page 1, Frontside, Backside, etc). 
 For a full list of features, please visit our website.
 
