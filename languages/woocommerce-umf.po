@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WooCommerce Upload My File\n"
-"POT-Creation-Date: 2013-04-04 10:38+0100\n"
-"PO-Revision-Date: 2013-04-04 10:39+0100\n"
+"POT-Creation-Date: 2013-05-28 15:07+0100\n"
+"PO-Revision-Date: 2013-05-28 15:07+0100\n"
 "Last-Translator: Bart Pluijms <info@geev.nl>\n"
 "Language-Team: Geev vormgeeving <info@geev.nl>\n"
 "Language: nl_NL\n"
@@ -69,39 +69,53 @@ msgid "Specify which order statuses will allow customers to upload files."
 msgstr ""
 "Geef aan welke bestelstatus klanten de mogelijkheid geeft om te uploaden."
 
-#: admin/umf-settings.php:107
+#: admin/umf-settings.php:109
+msgid "Styling"
+msgstr "Styling"
+
+#: admin/umf-settings.php:112
+msgid "Enable WooCommerce Upload My File CSS:"
+msgstr "Gebruik WooCommerce Upload My File CSS:"
+
+#: admin/umf-settings.php:114
+msgid ""
+"We've made some default styling for the frontend. Do you want to use it?"
+msgstr ""
+"We hebben standaard CSS styling gemaakt voor de klant. Wil je deze gebruiken?"
+
+#: admin/umf-settings.php:118
 msgid "PRO Settings"
 msgstr "PRO instellingen"
 
-#: admin/umf-settings.php:110
+#: admin/umf-settings.php:121
 msgid "Default enable upload:"
 msgstr "Standaard uploaden toestaan:"
 
-#: admin/umf-settings.php:113
+#: admin/umf-settings.php:124
 msgid "No"
 msgstr "Nee"
 
-#: admin/umf-settings.php:114
+#: admin/umf-settings.php:125
 msgid "Yes"
 msgstr "Ja"
 
-#: admin/umf-settings.php:116
+#: admin/umf-settings.php:127
 msgid "Default enable file upload for all products"
 msgstr "Sta uploaden standaard toe voor producten"
 
-#: admin/umf-settings.php:122
+#: admin/umf-settings.php:133
 msgid "Default upload limit:"
 msgstr "Standaard upload limiet:"
 
-#: admin/umf-settings.php:127
+#: admin/umf-settings.php:138
 msgid "Specify the default upload limit."
 msgstr "Vul het standaard upload limiet in."
 
-#: admin/umf-settings.php:134
+#: admin/umf-settings.php:145
 msgid "Upload path:"
 msgstr "Upload pad:"
 
-#: admin/umf-settings.php:140
+#: admin/umf-settings.php:151
 msgid ""
 "Upload path for new uploads. Subfolders with the order-ID will be created "
 "within this directory."
@@ -109,39 +123,39 @@ msgstr ""
 "Upload pad voor nieuwe uploads. Subdirectories met het order-ID worden "
 "automatisch aangemaakt in deze directorie."
 
-#: admin/umf-settings.php:146
+#: admin/umf-settings.php:157
 msgid "Whitelist or Blacklist files:"
 msgstr "Whitelist of Blacklist bestanden "
 
-#: admin/umf-settings.php:150
+#: admin/umf-settings.php:161
 msgid "whitelist"
 msgstr "whitelist"
 
-#: admin/umf-settings.php:151
+#: admin/umf-settings.php:162
 msgid "blacklist"
 msgstr "blacklist"
 
-#: admin/umf-settings.php:154
+#: admin/umf-settings.php:165
 msgid "Specify if you want to whitelist or blacklist file types."
 msgstr "Geef aan of je bestanden wil whitelisten of blacklisten"
 
-#: admin/umf-settings.php:161
+#: admin/umf-settings.php:172
 msgid "Save Changes"
 msgstr "Wijzigingen opslaan"
 
-#: admin/umf-settings.php:171
+#: admin/umf-settings.php:182
 msgid "Buy Pro!"
 msgstr "Koop Pro!"
 
-#: admin/umf-settings.php:173
+#: admin/umf-settings.php:184
 msgid "Check out our "
 msgstr "Bekijk onze"
 
-#: admin/umf-settings.php:173
+#: admin/umf-settings.php:184
 msgid "to find out more about WooCommerce Upload My File Pro."
 msgstr "voor meer informatie over WooCommerce Upload My File Pro."
 
-#: admin/umf-settings.php:174
+#: admin/umf-settings.php:185
 msgid ""
 "For only &euro; 25,00 you will get a lot of features and access to our "
 "support section."
@@ -149,35 +163,51 @@ msgstr ""
 "Voor &euro; 25,00 krijg je meer functionaliteiten en toegang tot onze "
 "support sectie."
 
-#: admin/umf-settings.php:175
+#: admin/umf-settings.php:186
 msgid "A couple of features:"
 msgstr "Een aantal functionaliteiten:"
 
-#: admin/umf-settings.php:176
+#: admin/umf-settings.php:187
+msgid "New"
+msgstr "Nieuw"
+
+#: admin/umf-settings.php:187
+msgid "Specify upload titles per product."
+msgstr "Geef je uploads een naam per product."
+
+#: admin/umf-settings.php:187
+msgid "File preview"
+msgstr "Bestand preview"
+
+#: admin/umf-settings.php:187
+msgid "Preview thumbnails of uploaded files"
+msgstr "Thumbnails van geuploade afbeeldingen"
+
+#: admin/umf-settings.php:187
 msgid "Allow more than one upload per product"
 msgstr "Sta meer dan 1 upload per product toe"
 
-#: admin/umf-settings.php:176
-msgid "White or blacklist file-types"
+#: admin/umf-settings.php:187
+msgid "White or blacklist file types"
 msgstr "Whitelist of Blacklist bestanden"
 
-#: admin/umf-settings.php:176
+#: admin/umf-settings.php:187
 msgid "Let users delete files"
 msgstr "Laat klanten bestanden verwijderen"
 
-#: admin/umf-settings.php:176
+#: admin/umf-settings.php:187
 msgid "Default enable file upload for products"
 msgstr "Sta uploaden standaard toe voor producten"
 
-#: admin/umf-settings.php:176
+#: admin/umf-settings.php:187
 msgid "Define your own upload path"
 msgstr "Bepaal je eigen upload directorie"
 
-#: admin/umf-settings.php:180
+#: admin/umf-settings.php:191
 msgid "Show Your Love"
 msgstr "Show your Love"
 
-#: admin/umf-settings.php:182
+#: admin/umf-settings.php:193
 #, php-format
 msgid ""
 "This plugin is developed by %s, a Dutch graphic design and webdevelopment "
@@ -185,21 +215,21 @@ msgid ""
 msgstr ""
 "Deze plugin is ontwikkeld door %s, een Nederlands grafisch ontwerp bureau."
 
-#: admin/umf-settings.php:183
+#: admin/umf-settings.php:194
 msgid ""
 "If you are happy with this plugin please show your love by liking us on "
 "Facebook"
 msgstr "Blij met deze plugin? Like ons op Facebook!"
 
-#: admin/umf-settings.php:185
+#: admin/umf-settings.php:196
 msgid "Or"
 msgstr "Of"
 
-#: admin/umf-settings.php:187
+#: admin/umf-settings.php:198
 msgid "Rate the plugin 5&#9733; on WordPress.org"
 msgstr "Waardeer deze plugin met 5&#9733; op WordPress.org"
 
-#: admin/umf-settings.php:188
+#: admin/umf-settings.php:199
 msgid "Blog about it & link to the plugin page"
 msgstr "Schrijf een blog en link naar de plugin pagina"
 
@@ -223,67 +253,78 @@ msgstr "Upload bestanden"
 msgid "Uploaded Files"
 msgstr "Toegevoegde bestanden"
 
-#: inc/umf-funct.php:42 inc/umf-funct.php:250
-#, php-format
-msgid "Number of files for this order: #%s"
-msgstr "Aantal te uploaden bestanden voor deze bestelling: %s"
-
-#: inc/umf-funct.php:54
+#: inc/umf-funct.php:52
 #, php-format
 msgid "File for product: %s:"
 msgstr "Bestand voor product %s:"
 
-#: inc/umf-funct.php:72
+#: inc/umf-funct.php:70
 #, php-format
 msgid "File #%s has not been uploaded."
 msgstr "Bestand %s is nog niet toegevoegd."
 
-#: inc/umf-funct.php:83
+#: inc/umf-funct.php:81
 #, php-format
 msgid "Files to be uploaded for this item: %s"
 msgstr "Nog aan te leveren bestanden voor dit product: %s"
 
-#: inc/umf-funct.php:93
+#: inc/umf-funct.php:91
 msgid "Enable"
 msgstr "Inschakelen"
 
-#: inc/umf-funct.php:220
+#: inc/umf-funct.php:218
 #, php-format
-msgid "There %s filetype is not allowed."
+msgid "The %s file type is not allowed."
 msgstr "Het %s bestandstype is niet toegestaan."
 
-#: inc/umf-funct.php:229
+#: inc/umf-funct.php:227
 #, php-format
 msgid "The file \"%s\" is to big."
 msgstr "Het bestand \"%s\" is te groot."
 
-#: inc/umf-funct.php:238
-msgid "There was an error in uploading your file(s)."
+#: inc/umf-funct.php:236
+msgid "There was an error while uploading your file(s)."
 msgstr "Er is iets verkeerd gegaan bij het uploaden van je bestand(en)."
 
-#: inc/umf-funct.php:242
+#: inc/umf-funct.php:240
+msgid "There was a problem while uploading your files."
+msgstr "Er is iets verkeerd gegaan bij het uploaden van je bestand(en)."
+
+#: inc/umf-funct.php:240
+msgid "Not all files have been successfully uploaded."
+msgstr "Niet alle bestanden zijn succesvol geupload."
+
+#: inc/umf-funct.php:243
 msgid "Your file(s) were uploaded successfully."
 msgstr "Je bestand(en) zijn succesvol toegevoegd."
 
-#: inc/umf-funct.php:249 templates/emails/customer-completed-order.php:49
+#: inc/umf-funct.php:255 templates/emails/customer-completed-order.php:49
 #: templates/emails/customer-note.php:53
 #: templates/emails/customer-processing-order.php:49
 msgid "Upload files"
 msgstr "Upload bestanden"
 
-#: inc/umf-funct.php:289
+#: inc/umf-funct.php:294 templates/myaccount/my-orders.php:76
 msgid "Upload"
 msgstr "Uploaden"
 
-#: inc/umf-funct.php:301
+#: inc/umf-funct.php:306
 #, php-format
 msgid "Max upload size per file: %s"
 msgstr "Max. upload grootte per bestand: %s"
 
-#: inc/umf-funct.php:302
+#: inc/umf-funct.php:307
 #, php-format
 msgid "Max total upload size: %s"
 msgstr "Max. totale upload grootte: %s"
+
+#: inc/umf-funct.php:333
+msgid "Allowed filetypes:"
+msgstr "Toegestane bestandstypen:"
+
+#: inc/umf-funct.php:335
+msgid "All filetypes are allowed, except:"
+msgstr "Alle bestandstypen zijn toegestaan, behalve:"
 
 #: templates/emails/customer-completed-order.php:14
 #, php-format
@@ -366,7 +407,7 @@ msgstr "Bestelling"
 
 #: templates/myaccount/my-orders.php:33
 msgid "Date"
-msgstr ""
+msgstr "Datum"
 
 #: templates/myaccount/my-orders.php:34
 msgid "Total"
@@ -381,11 +422,7 @@ msgid "Status"
 msgstr "Status"
 
 #: templates/myaccount/my-orders.php:67
-msgid "uploaden"
-msgstr "Uploaden"
-
-#: templates/myaccount/my-orders.php:76
-msgid "Uploaden"
+msgid "upload"
 msgstr "Uploaden"
 
 #: templates/myaccount/my-orders.php:84
@@ -399,6 +436,12 @@ msgstr "Annuleren"
 #: templates/myaccount/my-orders.php:95
 msgid "View"
 msgstr "Bekijken"
+
+#~ msgid "Uploaden"
+#~ msgstr "Uploaden"
+
+#~ msgid "Number of files for this order: #%s"
+#~ msgstr "Aantal te uploaden bestanden voor deze bestelling: %s"
 
 #~ msgid "License key"
 #~ msgstr "Licentiecode"
@@ -460,9 +503,6 @@ msgstr "Bekijken"
 
 #~ msgid "File #%s: <a href=\"%s\" target=\"_blank\">%s</a>"
 #~ msgstr "Bestand %s: <a href=\"%s\" target=\"_blank\">%s</a>"
-
-#~ msgid "Sorry, no files have been uploaded yet."
-#~ msgstr "Sorry, er zijn nog geen bestanden toegevoegd."
 
 #~ msgid "Upload file for:"
 #~ msgstr "Upload bestand voor:"

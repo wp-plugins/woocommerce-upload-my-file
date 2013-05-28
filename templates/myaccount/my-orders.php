@@ -64,7 +64,7 @@ if ( $customer_orders ) : ?>
 					<?php } ?>
 					<td class="order-files <?php echo check_for_files($order->id);?>">
 					<?php if(check_for_files($order->id)=='upload') {
-							echo '<a href="'. esc_url( add_query_arg('order', $order->id, get_permalink(woocommerce_get_page_id('view_order'))) ).'">'.__( 'uploaden', 'woocommerce-umf' ).'</a>';
+							echo '<a href="'. esc_url( add_query_arg('order', $order->id, get_permalink(woocommerce_get_page_id('view_order'))) ).'">'.__( 'upload', 'woocommerce-umf' ).'</a>';
 						} elseif(check_for_files($order->id)=='blank') { echo '-'; }
 					?>
 					</td><td class="order-status" style="text-align:left; white-space:nowrap;">
@@ -73,7 +73,7 @@ if ( $customer_orders ) : ?>
 					<td class="order-actions" style="text-align:right; white-space:nowrap;">
 						<?php
 							if(check_for_files($order->id)=='upload') {
-							echo '<a href="'. esc_url( add_query_arg('order', $order->id, get_permalink(woocommerce_get_page_id('view_order'))) ).'" class="umf-btn icon-upload"><span>'.__( 'Uploaden', 'woocommerce-umf' ).'</span></a>';
+							echo '<a href="'. esc_url( add_query_arg('order', $order->id, get_permalink(woocommerce_get_page_id('view_order'))) ).'" class="umf-btn icon-upload"><span>'.__( 'Upload', 'woocommerce-umf' ).'</span></a>';
 							}
 							
 						

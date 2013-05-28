@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WooCommerce Upload My File\n"
-"POT-Creation-Date: 2013-05-28 11:37+0100\n"
-"PO-Revision-Date: 2013-05-28 11:39+0100\n"
+"POT-Creation-Date: 2013-05-28 15:07+0100\n"
+"PO-Revision-Date: 2013-05-28 15:07+0100\n"
 "Last-Translator: Bart Pluijms <info@geev.nl>\n"
 "Language-Team: Geev vormgeeving <info@geev.nl>\n"
 "Language: nl_NL\n"
@@ -304,7 +304,7 @@ msgstr "Je bestand(en) zijn succesvol toegevoegd."
 msgid "Upload files"
 msgstr "Upload bestanden"
 
-#: inc/umf-funct.php:294
+#: inc/umf-funct.php:294 templates/myaccount/my-orders.php:76
 msgid "Upload"
 msgstr "Uploaden"
 
@@ -422,11 +422,7 @@ msgid "Status"
 msgstr "Status"
 
 #: templates/myaccount/my-orders.php:67
-msgid "uploaden"
-msgstr "Uploaden"
-
-#: templates/myaccount/my-orders.php:76
-msgid "Uploaden"
+msgid "upload"
 msgstr "Uploaden"
 
 #: templates/myaccount/my-orders.php:84
@@ -440,6 +436,9 @@ msgstr "Annuleren"
 #: templates/myaccount/my-orders.php:95
 msgid "View"
 msgstr "Bekijken"
+
+#~ msgid "Uploaden"
+#~ msgstr "Uploaden"
 
 #~ msgid "Number of files for this order: #%s"
 #~ msgstr "Aantal te uploaden bestanden voor deze bestelling: %s"
