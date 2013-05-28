@@ -104,6 +104,17 @@ jQuery(document).ready(function(){
     									?></span>
     								</td>
     							</tr>
+																<tr>
+    								<th>
+    									<b><?php _e( 'Styling', 'woocommerce-umf' );?></b>
+    								</th>
+    								<td>
+										<input id=woocommerce_umf_use_style type=checkbox <?php if(get_option( 'woocommerce_umf_use_style' )=='on' || get_option( 'woocommerce_umf_use_style' )=="") { echo 'checked';}?> name="woocommerce_umf_use_style"> <label for="woocommerce_umf_use_style"><?php _e( 'Enable WooCommerce Upload My File CSS:', 'woocommerce-umf' ); ?></label><br>
+    									<span class="description">
+											<?php _e( 'We\'ve made some default styling for the frontend. Do you want to use it?', 'woocommerce-umf' );?>
+										</span>
+    								</td>
+    							</tr>
 								<tr><td colspan=2><h2 style="margin:0px;padding:0px;color:#999;"><?php _e( 'PRO Settings', 'woocommerce-umf' ); ?></h2></td></tr>
 								<tr style="color:#999;">
     								<th>
@@ -173,7 +184,7 @@ jQuery(document).ready(function(){
 							<p><?php echo __( 'Check out our ', 'woocommerce-umf' ); ?> <a href="http://wordpress.geev.nl/product/woocommerce-upload-my-file/">website</a> <?php _e('to find out more about WooCommerce Upload My File Pro.', 'woocommerce-umf' );?></p>
 							<p><?php _e('For only &euro; 25,00 you will get a lot of features and access to our support section.', 'woocommerce-umf' );?></p>
 							<p><?php _e('A couple of features:', 'woocommerce-umf' );?>
-							<ul style="list-style:square;padding-left:20px;margin-top:-10px;"><li><?php _e('Allow more than one upload per product', 'woocommerce-umf' );?></li><li><?php _e('White or blacklist file-types', 'woocommerce-umf' );?></li><li><?php _e('Let users delete files', 'woocommerce-umf' );?></li><li><?php _e('Default enable file upload for products', 'woocommerce-umf' );?></li><li><?php _e('Define your own upload path', 'woocommerce-umf' );?></li></ul>
+							<ul style="list-style:square;padding-left:20px;margin-top:-10px;"><li><strong><?php _e('New', 'woocommerce-umf' );?></strong>: <?php _e('Specify upload titles per product.', 'woocommerce-umf' );?></li><li><strong><?php _e('New', 'woocommerce-umf' );?></strong>: <?php _e('File preview', 'woocommerce-umf' );?></li><li><strong><?php _e('New', 'woocommerce-umf' );?></strong>: <?php _e('Preview thumbnails of uploaded files', 'woocommerce-umf' );?></li><li><?php _e('Allow more than one upload per product', 'woocommerce-umf' );?></li><li><?php _e('White or blacklist file types', 'woocommerce-umf' );?></li><li><?php _e('Let users delete files', 'woocommerce-umf' );?></li><li><?php _e('Default enable file upload for products', 'woocommerce-umf' );?></li><li><?php _e('Define your own upload path', 'woocommerce-umf' );?></li></ul>
 						</div>
 					</div>
 					<div class="postbox">

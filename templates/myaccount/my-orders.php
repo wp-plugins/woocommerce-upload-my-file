@@ -62,7 +62,7 @@ if ( $customer_orders ) : ?>
 					<?php } else {?>
 					<td class="order-total paid" ><?php echo $order->get_formatted_order_total(); ?></td>
 					<?php } ?>
-					<td class="order-files <?php echo check_for_files($order->id);?>" width="10%">
+					<td class="order-files <?php echo check_for_files($order->id);?>">
 					<?php if(check_for_files($order->id)=='upload') {
 							echo '<a href="'. esc_url( add_query_arg('order', $order->id, get_permalink(woocommerce_get_page_id('view_order'))) ).'">'.__( 'uploaden', 'woocommerce-umf' ).'</a>';
 						} elseif(check_for_files($order->id)=='blank') { echo '-'; }

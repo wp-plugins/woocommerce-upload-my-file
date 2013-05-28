@@ -39,8 +39,6 @@ function woocommerce_umf_add_box() {
 /* Inhoud van de box op de order-detail pagina*/
 function woocommerce_umf_box_order_detail($post) {
 	$order=new WC_Order($post);
-	printf( __('Number of files for this order: #%s', 'woocommerce-umf'), get_max_upload_count($order) );
-	echo '<br><br>';
 		
 	$j=1;
 	/* per product een formulier met gegevens */
@@ -217,7 +215,7 @@ function upload_files_field( $order_id ) {
 				if( in_array( $ext, $doctypes ) ) $typeallow = true;
 					else $typeallow = false;
 			if($typeallow==false) {
-				echo '<p class="error">' . sprintf( __( 'There %s filetype is not allowed.', 'woocommerce-umf'), $ext ) . '</p>';
+				$upload_error.= '<li>' . sprintf( __( 'The %s file type is not allowed.', 'woocommerce-umf'), $ext ) . '</li>';
 			}
 			$filesize=(int)get_option( 'woocommerce_umf_max_uploadsize' );
 			$max_upload = (int)(ini_get('upload_max_filesize'));
@@ -226,7 +224,7 @@ function upload_files_field( $order_id ) {
 			$max_mb = min($max_upload, $max_post, $memory_limit);
 			if($filesize > $max_mb) { $filesize=$max_mb;}
 			if($_FILES[$key]["size"]< ($filesize*1024*1024))
-				{$sizeallow=true; } else {$sizeallow=false; echo '<p class="error">' . sprintf( __( 'The file "%s" is to big.', 'woocommerce-umf'), $umf_file['name'] ) . '</p>';}
+				{$sizeallow=true; } else {$sizeallow=false; $upload_error.= '<li">' . sprintf( __( 'The file "%s" is to big.', 'woocommerce-umf'), $umf_file['name'] ) . '</li>';}
 			
 			if( $typeallow == true && $sizeallow == true ) {
 				if( copy( $umf_file['tmp_name'], $umf_filepath ) ) {
@@ -235,34 +233,41 @@ function upload_files_field( $order_id ) {
 					update_post_meta( $order_id, '_woo_umf_uploaded_file_path_' . $key, $umf_filepath );
 					update_post_meta( $order_id, '_woo_umf_uploaded_product_name_' . $key, $_POST['uploaded_product_name'][$key] );
 				} else {
-					echo '<p class="error">' . __( 'There was an error in uploading your file(s).', 'woocommerce-umf') . '</p>';
+					$upload_error.= '<li>' . __( 'There was an error while uploading your file(s).', 'woocommerce-umf') . '</li>';
 				}
 			} 
-			if($success==true) {
-				echo '<p class="success">' . __( 'Your file(s) were uploaded successfully.', 'woocommerce-umf') . '</p>';
-			}
+		if($success==true && $upload_error!="") {
+		  echo '<p class="woocommerce-info woo-umf-success updated">' . __( 'There was a problem while uploading your files.', 'woocommerce-umf') . '<br>' . __( 'Not all files have been successfully uploaded.', 'woocommerce-umf') . '</p>';
+		}
+		if($success==true && $upload_error=="") {
+		  echo '<p class="woocommerce-message woo-umf-success success">' . __( 'Your file(s) were uploaded successfully.', 'woocommerce-umf') . '</p>';
+		}
+		if($upload_error!="") {
+		  echo '<div class="woocommerce-error woo-umf-error error"><ul>';
+		  echo $upload_error;
+		  echo '</ul></div>';
+		}
 		}
 	}
-	
+
 	/* wanneer er meer dan 1 bestand geupload kan worden, ga verder */
 	if(get_max_upload_count($order) > 0) {
 	echo '<h2>' . __( 'Upload files', 'woocommerce-umf' ) . '</h2>';
-	printf( __('Number of files for this order: #%s', 'woocommerce-umf'), get_max_upload_count($order) );
-	echo '<br><br>';
+
 	/*begin form*/
-	echo '<form enctype="multipart/form-data" action="" method="POST">';
+	echo '<form enctype="multipart/form-data" action="" method="POST" class=woo-umf-form>';
 		
 		$j=1;
 		/* per product een formulier met gegevens */
 		foreach ( $order->get_items() as $order_item ) {
 			$max_upload_count=0;
 			$max_upload_count=get_max_upload_count($order,$order_item['product_id']);
-			if($max_upload_count!=0){
-			echo '<fieldset class=labelblock><p>';
-			echo '<span><strong>'.$order_item['name'].'</strong></span>';
 			$item_meta = new WC_Order_Item_Meta( $order_item['item_meta'] );
-			echo '<span>'.$item_meta->display($flat=true,$return=true).'</span>';
-			echo '</p>';
+			if($max_upload_count!=0){
+			    // start fieldset per product item
+		        echo '<fieldset class="woo-umf-product">';
+				if($item_meta->display($flat=true,$return=true)!="") {$variation='<span class=woo-umf-variations>'.$item_meta->display($flat=true,$return=true).'</span>';} else {$variation='';}
+  		        echo '<legend>'.$order_item['name'].' '.$variation.'</span></legend>';
 			/* Controle of er al een bestand is geupload */
 			$i=1;
 			$upload_count=0;
@@ -270,7 +275,7 @@ function upload_files_field( $order_id ) {
 				$name = get_post_meta( $order_id, '_woo_umf_uploaded_file_name_' . $j, true );
 				/* geen bestand geupload, dus toon upload velden */
 				if($name=="") {
-					echo '<p><input type="file" name="'.$j.'" /></p>';
+					echo '<div class=woo-umf-item-box><input type="file" name="'.$j.'" /> <span class="umf-btn umf-icon-info"><em>'.woo_um_get_allowed_filetypes($order_item['product_id']).'</em></span></div>';
 					echo '<input type="hidden" value="'.strip_tags($order_item['name'].' - '.$item_meta->display($flat=true,$return=true)).'" name="uploaded_product_name['.$j.']">';
 					$upload=true;
 				} else {
@@ -304,6 +309,30 @@ function upload_files_field( $order_id ) {
 
 	echo '</form>';
 	/* eind form*/
+	}
+}
+/**
+* woo_umf_styles
+* Add basic frontend styling if is choosen in admin
+* Since 0.2
+*/
+function woo_umf_styles() {
+	wp_enqueue_style('woo-umf-style', plugins_url('css/woo-umf.css',dirname(__FILE__)));
+}
+/** 
+* Get allowed or disallowed filetypes and corresponding language strings 
+* @since 0.2
+*/
+function woo_um_get_allowed_filetypes($product_id) {
+	if(get_post_meta($product_id, '_woo_umf_filetypes',true )=="") {
+	  $filetypes = get_option( 'woocommerce_umf_allowed_file_types' );
+	} else {
+	  $filetypes = get_post_meta( $product_id, '_woo_umf_filetypes', true );
+	}
+	if(get_option('woocommerce_umf_whitelist')=='whitelist') {
+		return __('Allowed filetypes:','woocommerce-umf').' '.$filetypes;
+	} else {
+		return __('All filetypes are allowed, except:','woocommerce-umf').' '.$filetypes;
 	}
 }
 ?>

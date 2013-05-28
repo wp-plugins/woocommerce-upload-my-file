@@ -3,7 +3,7 @@
 Plugin Name: WooCommerce Upload My File
 Plugin URI: http://wordpress.geev.nl/product/woocommerce-upload-my-file/
 Description: This plugin provides the possibility to upload files in WooCommerce after ordering. - Free Version
-Version: 0.1
+Version: 0.2
 Author: Geev vormgeeving
 Author URI: http://www.geev.nl/
 */
@@ -33,6 +33,11 @@ if (is_woocommerce_active()) {
 	add_action( 'save_post', 'save_meta_settings' );
 	add_action( 'woocommerce_view_order','upload_files_field' );
 	
+	// If frontend styling is on, load styles in footer
+	if(get_option( 'woocommerce_umf_use_style')=='on') {
+		add_action('wp_footer','woo_umf_styles');
+	}
+		
 	/* template overrides for WooCommerce*/
 	function umf_path() { return untrailingslashit( plugin_dir_path( __FILE__ ) ); }
 		add_filter( 'woocommerce_locate_template', 'umf_template_override', 10, 3 );
@@ -52,4 +57,16 @@ if (is_woocommerce_active()) {
 /* if WooCommerce is not active show admin message */
 add_action('admin_notices', 'showAdminMessages');   
 }
+
+/**
+* Settings link on plugin page 
+*/
+function umf_plugin_links($links) { 
+  $settings_link = '<a href="admin.php?page=woocommerce_umf">Settings</a>'; 
+  $premium_link = '<a href="http://wordpress.geev.nl/product/woocommerce-upload-my-file/" title="Buy Pro" target=_blank>Buy Pro</a>'; 
+  array_unshift($links, $settings_link,$premium_link); 
+  return $links; 
+}
+$plugin = plugin_basename(__FILE__); 
+add_filter("plugin_action_links_$plugin", 'umf_plugin_links' );
 ?>
