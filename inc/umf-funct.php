@@ -13,12 +13,14 @@ if ( ! function_exists( 'is_woocommerce_active' ) ) {
 }
 
 /*admin messages*/
+if(!function_exists('showMessage')) {
 function showMessage($message, $errormsg = false)
 {
 	if ($errormsg) { echo '<div id="message" class="error">';}
 	else {echo '<div id="message" class="updated fade">';}
 	echo "<p><strong>$message</strong></p></div>";
 }    
+}
 function showAdminMessages() {showMessage(__( 'WooCommerce is not active. Please activate plugin before using WooCommerce Upload My File plugin.', 'woocommerce_umf'), true);}
 
 /* WordPress Administration Menu
@@ -38,7 +40,7 @@ function woocommerce_umf_add_box() {
 
 /* Inhoud van de box op de order-detail pagina*/
 function woocommerce_umf_box_order_detail($post) {
-	$order=new WC_Order($post);
+	$order=new WC_Order($post->ID);
 		
 	$j=1;
 	/* per product een formulier met gegevens */
@@ -198,9 +200,8 @@ Deze functie toont de upload velden op de order-detail pagina van de klant
 function upload_files_field( $order_id ) {
 	$order = new WC_Order( $order_id );
 	
-	
 	/* upload handler */
-	if( isset( $_FILES ) && $_POST['upload']) {
+	if( isset( $_FILES ) && isset($_POST['upload']) && $_POST['upload']) { 
 	
 		$upload_dir=wp_upload_dir();
 		$path = trailingslashit( trailingslashit( $upload_dir['basedir'].'/umf/' ) . $order_id );
@@ -236,13 +237,13 @@ function upload_files_field( $order_id ) {
 					$upload_error.= '<li>' . __( 'There was an error while uploading your file(s).', 'woocommerce-umf') . '</li>';
 				}
 			} 
-		if($success==true && $upload_error!="") {
+		if($success==true && isset($upload_error) && $upload_error!="") {
 		  echo '<p class="woocommerce-info woo-umf-success updated">' . __( 'There was a problem while uploading your files.', 'woocommerce-umf') . '<br>' . __( 'Not all files have been successfully uploaded.', 'woocommerce-umf') . '</p>';
 		}
-		if($success==true && $upload_error=="") {
+		if($success==true && isset($upload_error) && $upload_error=="") {
 		  echo '<p class="woocommerce-message woo-umf-success success">' . __( 'Your file(s) were uploaded successfully.', 'woocommerce-umf') . '</p>';
 		}
-		if($upload_error!="") {
+		if(isset($upload_error) && $upload_error!="") {
 		  echo '<div class="woocommerce-error woo-umf-error error"><ul>';
 		  echo $upload_error;
 		  echo '</ul></div>';
@@ -291,7 +292,7 @@ function upload_files_field( $order_id ) {
 		}
 	
 	/* knoppen */
-		if( $upload ) {	echo '<input type="submit" name=upload class="button uploadfiles" value="' . __( 'Upload', 'woocommerce-umf' ) . '" />';} 
+		if( isset($upload) ) {	echo '<input type="submit" name=upload class="button uploadfiles" value="' . __( 'Upload', 'woocommerce-umf' ) . '" />';} 
 		
 	/* upload info */
 		echo '<legend>';
