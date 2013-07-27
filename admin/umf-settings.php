@@ -8,6 +8,7 @@ function woocommerce_umf_page() {
 	}
 // Save the field values
 	if ( isset( $_POST['umf_fields_submitted'] ) && $_POST['umf_fields_submitted'] == 'submitted' ) {
+		delete_option('woocommerce_umf_use_style');
 		foreach ( $_POST as $key => $value ) {
 			if ( get_option( $key ) != $value ) {
 				update_option( $key, $value );
@@ -95,7 +96,7 @@ jQuery(document).ready(function(){
 		foreach( $statuses as $status ) {
 			$values[ $status->slug ] = $status->name;
 			?>
-			<input type=checkbox name="woocommerce_umf_status[<?php echo $i;?>]"  value="<?php echo $status->name;?>" <?php if($statusname[$i]==$status->name) { echo 'checked';}?>> <?php _e($status->name,'woocommerce');?><br>
+			<input type=checkbox name="woocommerce_umf_status[<?php echo $i;?>]"  value="<?php echo $status->name;?>" <?php if(isset($statusname[$i]) && $statusname[$i]==$status->name) { echo 'checked';}?>> <?php _e($status->name,'woocommerce');?><br>
 			<?php $i++;
 		} ?>
 
@@ -109,7 +110,7 @@ jQuery(document).ready(function(){
     									<b><?php _e( 'Styling', 'woocommerce-umf' );?></b>
     								</th>
     								<td>
-										<input id=woocommerce_umf_use_style type=checkbox <?php if(get_option( 'woocommerce_umf_use_style' )=='on' || get_option( 'woocommerce_umf_use_style' )=="") { echo 'checked';}?> name="woocommerce_umf_use_style"> <label for="woocommerce_umf_use_style"><?php _e( 'Enable WooCommerce Upload My File CSS:', 'woocommerce-umf' ); ?></label><br>
+										<input id=woocommerce_umf_use_style type=checkbox <?php if(get_option( 'woocommerce_umf_use_style')=='on') { echo 'checked';}?> name="woocommerce_umf_use_style"> <label for="woocommerce_umf_use_style"><?php _e( 'Enable WooCommerce Upload My File CSS:', 'woocommerce-umf' ); ?></label><br>
     									<span class="description">
 											<?php _e( 'We\'ve made some default styling for the frontend. Do you want to use it?', 'woocommerce-umf' );?>
 										</span>
