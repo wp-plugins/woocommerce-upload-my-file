@@ -3,7 +3,7 @@
 Plugin Name: WooCommerce Upload My File
 Plugin URI: http://wordpress.geev.nl/product/woocommerce-upload-my-file/
 Description: This plugin provides the possibility to upload files in WooCommerce after ordering. - Free Version
-Version: 0.2.3
+Version: 0.2.4
 Author: Geev vormgeeving
 Author URI: http://www.geev.nl/
 */

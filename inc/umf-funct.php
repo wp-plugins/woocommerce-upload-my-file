@@ -330,10 +330,6 @@ function woo_um_get_allowed_filetypes($product_id) {
 	} else {
 	  $filetypes = get_post_meta( $product_id, '_woo_umf_filetypes', true );
 	}
-	if(get_option('woocommerce_umf_whitelist')=='whitelist') {
-		return __('Allowed filetypes:','woocommerce-umf').' '.$filetypes;
-	} else {
-		return __('All filetypes are allowed, except:','woocommerce-umf').' '.$filetypes;
-	}
+	return __('Allowed filetypes:','woocommerce-umf').' '.$filetypes;
 }
 ?>
