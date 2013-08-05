@@ -20,7 +20,7 @@ For more information, check out [our website](http://wordpress.geev.nl/product/w
 
 **Free version**
 
-This free version may be used as is. If you want more options and support you can buy WooCommerce Upload My File Pro for only &euro; 25,00.
+This free version may be used as is. If you want more options and support you can buy WooCommerce Upload My File Pro for only &euro; 29,00.
 
 **PRO version**
 
@@ -92,4 +92,4 @@ You may use the free version as it is. When you buy WooCommerce Upload My File P
 For a full list of features, please check out [our website](http://wordpress.geev.nl/product/woocommerce-upload-my-file/).
 
 = Why is there a PRO version? = 
-We want to give everyone the opportunity to use and try our plugins, but if you want to get more options and access to our support section you can buy our PRO version. WooCommerce Upload My File Pro costs only **€ 25,00**.
+We want to give everyone the opportunity to use and try our plugins, but if you want to get more options and access to our support section you can buy our PRO version. WooCommerce Upload My File Pro costs only **€ 29,00**.
