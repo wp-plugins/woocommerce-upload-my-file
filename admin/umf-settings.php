@@ -183,7 +183,7 @@ jQuery(document).ready(function(){
 						<h3><?php _e( 'Buy Pro!', 'woocommerce-umf' ); ?></h3>
 						<div class="inside umf-preview">
 							<p><?php echo __( 'Check out our ', 'woocommerce-umf' ); ?> <a href="http://wordpress.geev.nl/product/woocommerce-upload-my-file/">website</a> <?php _e('to find out more about WooCommerce Upload My File Pro.', 'woocommerce-umf' );?></p>
-							<p><?php _e('For only &euro; 25,00 you will get a lot of features and access to our support section.', 'woocommerce-umf' );?></p>
+							<p><?php _e('For only &euro; 29,00 you will get a lot of features and access to our support section.', 'woocommerce-umf' );?></p>
 							<p><?php _e('A couple of features:', 'woocommerce-umf' );?>
 							<ul style="list-style:square;padding-left:20px;margin-top:-10px;"><li><strong><?php _e('New', 'woocommerce-umf' );?></strong>: <?php _e('Specify upload titles per product.', 'woocommerce-umf' );?></li><li><strong><?php _e('New', 'woocommerce-umf' );?></strong>: <?php _e('File preview', 'woocommerce-umf' );?></li><li><strong><?php _e('New', 'woocommerce-umf' );?></strong>: <?php _e('Preview thumbnails of uploaded files', 'woocommerce-umf' );?></li><li><?php _e('Allow more than one upload per product', 'woocommerce-umf' );?></li><li><?php _e('White or blacklist file types', 'woocommerce-umf' );?></li><li><?php _e('Let users delete files', 'woocommerce-umf' );?></li><li><?php _e('Default enable file upload for products', 'woocommerce-umf' );?></li><li><?php _e('Define your own upload path', 'woocommerce-umf' );?></li></ul>
 						</div>

@@ -143,7 +143,6 @@ function woocommerce_umf_get_product_meta( $product, $field_name ) {
     // variation support: return the value if it's defined at the variation level
     if ( isset( $product->variation_id ) && $product->variation_id ) {
 	
-	echo 'variation id bestat';
       if ( ( $value = get_post_meta( $product->variation_id, '_' . $field_name, true ) ) !== '' ) return $value;
       // otherwise return the value from the parent
       return get_post_meta( $product->id, '_' . $field_name, true );
