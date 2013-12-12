@@ -4,8 +4,8 @@ Plugin URI: http://wordpress.geev.nl/product/woocommerce-upload-my-file/
 Author URI: http://www.geev.nl
 Tags: woocommerce, file upload
 Requires at least: 3.3
-Tested up to: 3.7.1
-Stable tag: 0.2.5
+Tested up to: 3.8
+Stable tag: 0.2.6
 License: GPLv2
 
 This plugin adds the possibility to upload a file after an order is completed and attached it to that order.
@@ -56,6 +56,9 @@ Go to WooCommerce > Upload My File, configure and start uploading. Simple!
 
 == Changelog ==
 ***WooCommerce Upload My File***
+= 2013.12.12 - version 0.2.6 =
+* Changed: Minor layout modifications for WordPress 3.8
+
 = 2013.12.06 - version 0.2.5 =
 * Fixed: small bug fix on order number display
 

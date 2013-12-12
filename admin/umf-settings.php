@@ -18,27 +18,6 @@ function woocommerce_umf_page() {
 		}
 	}
 ?>
-<?php wp_enqueue_script("jquery-ui-tabs"); ?>
-<style>#poststuff h2.nav-tab-wrapper{padding-bottom:0px;}.tab{display:none;}.tab.active{display:block;}table td p {padding:0px !important;}</style>
-<script>
-jQuery(document).ready(function(){	
- //jQuery( "#tabs" ).tabs();
-	var active_tab = window.location.hash.replace('#top#','');
-	if ( active_tab == '' )
-		active_tab = 'general';
-	jQuery('#'+active_tab).addClass('active');
-	jQuery('#'+active_tab+'-tab').addClass('nav-tab-active');
-	
-	jQuery('.nav-tab-wrapper a').click(function() {
-		jQuery('.nav-tab-wrapper a').removeClass('nav-tab-active');
-		jQuery('.tab').removeClass('active');
-	
-		var id = jQuery(this).attr('id').replace('-tab','');
-		jQuery('#'+id).addClass('active');
-		jQuery(this).addClass('nav-tab-active');
-	});
-});
-</script>
 <div class="wrap">
 	<div id="icon-options-general" class="icon32"></div>
 	<h2><?php _e( 'WooCommerce - Upload My File', 'woocommerce-umf' ); ?></h2>
@@ -50,15 +29,10 @@ jQuery(document).ready(function(){
 			<input type="hidden" name="umf_fields_submitted" value="submitted">
 			<div id="poststuff">
 				<div style="float:left; width:72%; padding-right:3%;">
-					<div id="tabs">
-					<h2 class=nav-tab-wrapper>
-					<a id=general-tab class="nav-tab" href="#top#general"><?php _e( 'General', 'woocommerce-umf' ); ?></a>
-					</h2>
-					<div id="general" class="tab">
-					
+					<div class="postbox">
+						<h3><?php _e( 'General Settings', 'woocommerce-umf' ); ?></h3>
 						<div class="inside umf-settings">
 							<table class="form-table">
-								<tr><td colspan=2><h2 style="margin:0px;padding:0px;"><?php _e( 'General Settings', 'woocommerce-umf' ); ?></h2></td></tr>
 								<tr>
     								<th>
     									<label for="woocommerce_umf_allowed_file_types"><b><?php _e( 'Allowed file types:', 'woocommerce-umf' ); ?></b></label>
@@ -116,58 +90,6 @@ jQuery(document).ready(function(){
 										</span>
     								</td>
     							</tr>
-								<tr><td colspan=2><h2 style="margin:0px;padding:0px;color:#999;"><?php _e( 'PRO Settings', 'woocommerce-umf' ); ?></h2></td></tr>
-								<tr style="color:#999;">
-    								<th>
-    									<label for="woocommerce_umf_default_enable"><b style="color:#999;"><?php _e( 'Default enable upload:', 'woocommerce-umf' ); ?> </b></label>
-    								</th>
-    								<td>
-    									<input type="radio" name="" disabled value="0"> <?php _e( 'No' );?>&nbsp;
-										<input type="radio" name="" disabled value="1" checked> <?php _e( 'Yes' );?>
-    									<br><span class="description"><?php
-    										echo __( 'Default enable file upload for all products', 'woocommerce-umf' );
-    									?></span>
-    								</td>
-    							</tr>
-								<tr style="color:#999;">
-    								<th>
-    									<label for="woocommerce_umf_default_upload_limit"><b style="color:#999;"><?php _e( 'Default upload limit:', 'woocommerce-umf' ); ?> </b></label>
-    								</th>
-    								<td>
-    									<input type="text" name="" value="1"  disabled /><br />
-    									<span class="description"><?php
-    										echo __( 'Specify the default upload limit.', 'woocommerce-umf' );
-    									?></span>
-    								</td>
-    							</tr>
-								
-    							<tr style="color:#999;">
-    								<th>
-    									<label for="woocommerce_umf_upload_path"><b style="color:#999;"><?php _e( 'Upload path:', 'woocommerce-umf' ); ?> </b></label>
-    								</th>
-    								<td>
-									<?php $upload_dir=wp_upload_dir();?>
-    									<input type=text name="" disabled class="regular-text" value=""/><br />
-    									<span class="description"><?php
-    										echo __( 'Upload path for new uploads. Subfolders with the order-ID will be created within this directory.', 'woocommerce-umf' );
-    									?></span>
-    								</td>
-    							</tr>
-								<tr style="color:#999;">
-    								<th>
-    									<label for="woocommerce_umf_whitelist"><b style="color:#999;"><?php _e( 'Whitelist or Blacklist files:', 'woocommerce-umf' ); ?> </b></label>
-    								</th>
-    								<td>
-										<select name="" disabled class="select">
-											<option value="whitelist" selected><?php echo _e( 'whitelist', 'woocommerce-umf' );?></option>
-											<option value="blacklist"><?php echo _e( 'blacklist', 'woocommerce-umf' );?></option>
-										</select><br>
-    									<span class="description"><?php
-    										echo __( 'Specify if you want to whitelist or blacklist file types.', 'woocommerce-umf' );
-    									?></span>
-    								</td>
-    							</tr>
-								
 								<tr>
 									<td colspan=2>
 										<p class="submit"><input type="submit" name="Submit" class="button-primary" value="<?php _e( 'Save Changes', 'woocommerce-umf' ); ?>" /></p>
@@ -175,7 +97,6 @@ jQuery(document).ready(function(){
 								</tr>
 							</table>
 						</div>
-					</div>
 					</div>
 				</div>
 				<div style="float:right; width:25%;">
