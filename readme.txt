@@ -56,8 +56,8 @@ Go to WooCommerce > Upload My File, configure and start uploading. Simple!
 
 == Changelog ==
 ***WooCommerce Upload My File***
-= 2013.12.21 - version 0.3 =
-* Ready for WooCommerce 2.1
+= 2014.01.12 - version 0.3 =
+* Ready for WooCommerce 2.1 (tested on WooCommerce 2.1 Beta 3)
 * Several small tweaks
 
 = 2013.12.12 - version 0.2.6 =
