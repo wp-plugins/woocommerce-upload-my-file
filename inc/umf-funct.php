@@ -18,7 +18,7 @@ function showMessage($message, $errormsg = false)
 {
 	if ($errormsg) { echo '<div id="message" class="error">';}
 	else {echo '<div id="message" class="updated fade">';}
-	echo "<p><strong>$message</strong></p></div>";
+	echo "<p>$message</p></div>";
 }    
 }
 function showAdminMessages() {showMessage(__( 'WooCommerce is not active. Please activate plugin before using WooCommerce Upload My File plugin.', 'woocommerce_umf'), true);}
