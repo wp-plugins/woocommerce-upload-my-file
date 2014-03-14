@@ -1,54 +1,52 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WooCommerce Upload My File de_DE\n"
-"POT-Creation-Date: 2013-05-28 15:07+0100\n"
-"PO-Revision-Date: 2013-07-15 13:48+0100\n"
-"Last-Translator: BewerbungsBoost <office@bewerbungsboost.at>\n"
+"POT-Creation-Date: 2014-03-12 21:24+0100\n"
+"PO-Revision-Date: 2014-03-12 21:24+0100\n"
+"Last-Translator: Bart Pluijms <info@geev.nl>\n"
 "Language-Team: BewerbungsBoost <office@bewerbungsboost.at>\n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
-"X-Poedit-KeywordsList: _;__;_e\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-KeywordsList: _;__;_e;_n:1,2;_n_noop:1,2;_nx:1,2;_nx_noop:1,2\n"
 "X-Poedit-Basepath: .\n"
-"Language: de_DE\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
 
-#: admin/umf-settings.php:7
+#: ../admin/umf-settings.php:7
 msgid "You do not have sufficient permissions to access this page."
 msgstr "Sie sind nicht befugt diese Seite zu betrachten."
 
-#: admin/umf-settings.php:43
+#: ../admin/umf-settings.php:23
 msgid "WooCommerce - Upload My File"
 msgstr "WooCommerce - Upload My File"
 
-#: admin/umf-settings.php:45
+#: ../admin/umf-settings.php:25
 msgid "Your settings have been saved."
 msgstr "Ihre Einstellungen wurden gespeichert."
 
-#: admin/umf-settings.php:54
-msgid "General"
-msgstr "Allgemein"
-
-#: admin/umf-settings.php:60
+#: ../admin/umf-settings.php:33
 msgid "General Settings"
 msgstr "Allgemeine Einstellungen"
 
-#: admin/umf-settings.php:63
+#: ../admin/umf-settings.php:38
 msgid "Allowed file types:"
 msgstr "Erlaubte Dateitypen:"
 
-#: admin/umf-settings.php:68
+#: ../admin/umf-settings.php:43
 msgid "Specify which file types are allowed for uploading, seperate by commas."
 msgstr ""
 "Geben Sie an, welche Dateitypen zum Upload zugelassen sind. Getrennt durch "
 "Beistriche."
 
-#: admin/umf-settings.php:74
+#: ../admin/umf-settings.php:49
 msgid "Max. upload size:"
 msgstr "Max. Dateigröße des Uploads:"
 
-#: admin/umf-settings.php:79
+#: ../admin/umf-settings.php:54
 msgid ""
 "Specify maximum upload size for all files in MegaBytes. Cannot exceed max. "
 "PHP upload size."
@@ -56,158 +54,107 @@ msgstr ""
 "Geben Sie die maximale Upload Größe für alle Dateien an (in MB). Kann nicht "
 "mehr als die zugelassene PHP Upload Größe sein."
 
-#: admin/umf-settings.php:80
+#: ../admin/umf-settings.php:55
 msgid "Note: recommended max. upload size below 8MB."
 msgstr "Anmerkung: Empfohlene maximale upload Größe ist unter 8 MB."
 
-#: admin/umf-settings.php:87
+#: ../admin/umf-settings.php:62
 msgid "Required status(es):"
 msgstr "Benötigte Status:"
 
-#: admin/umf-settings.php:103
+#: ../admin/umf-settings.php:79
 msgid "Specify which order statuses will allow customers to upload files."
 msgstr ""
 "Geben Sie an, welche Bestellungsstatus den Kunden es erlauben, Dateien "
 "hochzuladen."
 
-#: admin/umf-settings.php:109
+#: ../admin/umf-settings.php:85
 msgid "Styling"
 msgstr "Styling"
 
-#: admin/umf-settings.php:112
+#: ../admin/umf-settings.php:88
 msgid "Enable WooCommerce Upload My File CSS:"
 msgstr "Aktiviere WooCommerce Upload My File CSS:"
 
-#: admin/umf-settings.php:114
+#: ../admin/umf-settings.php:90
 msgid ""
 "We've made some default styling for the frontend. Do you want to use it?"
 msgstr "Wir haben ein Design für das Frontend gemacht. Wollen Sie es benutzen?"
 
-#: admin/umf-settings.php:118
-msgid "PRO Settings"
-msgstr "PRO Einstellungen"
-
-#: admin/umf-settings.php:121
-msgid "Default enable upload:"
-msgstr "Upload aktivieren als Standard:"
-
-#: admin/umf-settings.php:124
-msgid "No"
-msgstr "Nein"
-
-#: admin/umf-settings.php:125
-msgid "Yes"
-msgstr "Ja"
-
-#: admin/umf-settings.php:127
-msgid "Default enable file upload for all products"
-msgstr "Standardmäßig Dateiupload für alle Produkte aktivieren"
-
-#: admin/umf-settings.php:133
-msgid "Default upload limit:"
-msgstr "Standard upload Limit:"
-
-#: admin/umf-settings.php:138
-msgid "Specify the default upload limit."
-msgstr "Geben Sie das Standard upload Limit an."
-
-#: admin/umf-settings.php:145
-msgid "Upload path:"
-msgstr "Upload pfad:"
-
-#: admin/umf-settings.php:151
-msgid ""
-"Upload path for new uploads. Subfolders with the order-ID will be created "
-"within this directory."
-msgstr ""
-"Pfad für neue Uploads. Unterordner mit der Bestellungs-ID werden in diesem "
-"Ordner erstellt."
-
-#: admin/umf-settings.php:157
-msgid "Whitelist or Blacklist files:"
-msgstr "Whitelist oder Blacklist Dateien:"
-
-#: admin/umf-settings.php:161
-msgid "whitelist"
-msgstr "whitelist"
-
-#: admin/umf-settings.php:162
-msgid "blacklist"
-msgstr "blacklist"
-
-#: admin/umf-settings.php:165
-msgid "Specify if you want to whitelist or blacklist file types."
-msgstr "Geben Sie an ob sie Dateitypen whitelisten oder blacklisten wollen."
-
-#: admin/umf-settings.php:172
+#: ../admin/umf-settings.php:96
 msgid "Save Changes"
 msgstr "Änderungen Speichern"
 
-#: admin/umf-settings.php:182
+#: ../admin/umf-settings.php:105
 msgid "Buy Pro!"
 msgstr "Pro Kaufen!"
 
-#: admin/umf-settings.php:184
+#: ../admin/umf-settings.php:107
 msgid "Check out our "
 msgstr "Probieren sie unser"
 
-#: admin/umf-settings.php:184
+#: ../admin/umf-settings.php:107
 msgid "to find out more about WooCommerce Upload My File Pro."
 msgstr "um mehr über WooCommerce Upload My File Pro zu erfahren."
 
-#: admin/umf-settings.php:185
+#: ../admin/umf-settings.php:108
 msgid ""
-"For only &euro; 25,00 you will get a lot of features and access to our "
+"For only &euro; 29,00 you will get a lot of features and access to our "
 "support section."
 msgstr ""
-"Für nur &euro; 25,00 bekommen sie viele Funktionen und Zugang zu unserer "
+"Für nur &euro; 29,00 bekommen sie viele Funktionen und Zugang zu unserer "
 "Support Seite."
 
-#: admin/umf-settings.php:186
+#: ../admin/umf-settings.php:109
 msgid "A couple of features:"
 msgstr "Ein Auszug der Funktionen:"
 
-#: admin/umf-settings.php:187
+#: ../admin/umf-settings.php:112 ../admin/umf-settings.php:113
+#: ../admin/umf-settings.php:114
 msgid "New"
 msgstr "Neu"
 
-#: admin/umf-settings.php:187
+#: ../admin/umf-settings.php:112
+msgid "Use an AJAX Uploader with progress bar"
+msgstr ""
+
+#: ../admin/umf-settings.php:113
+msgid "Upload LARGE ( > 100 MB) files"
+msgstr ""
+
+#: ../admin/umf-settings.php:114
+msgid "Send admin notifications after upload"
+msgstr ""
+
+#: ../admin/umf-settings.php:115
 msgid "Specify upload titles per product."
 msgstr "Upload Namen für die Produkte angeben."
 
-#: admin/umf-settings.php:187
+#: ../admin/umf-settings.php:115
 msgid "File preview"
 msgstr "Dateivorschau"
 
-#: admin/umf-settings.php:187
+#: ../admin/umf-settings.php:116
 msgid "Preview thumbnails of uploaded files"
 msgstr "Thumbnails von hochgeladenen Dateien ansehen"
 
-#: admin/umf-settings.php:187
-msgid "Allow more than one upload per product"
-msgstr "Mehr als ein Upload pro Produkt zulassen"
-
-#: admin/umf-settings.php:187
+#: ../admin/umf-settings.php:116
 msgid "White or blacklist file types"
 msgstr "Dateitypen Whitelisten oder Blacklisten"
 
-#: admin/umf-settings.php:187
+#: ../admin/umf-settings.php:116
 msgid "Let users delete files"
 msgstr "Lassen Sie User Dateien löschen"
 
-#: admin/umf-settings.php:187
-msgid "Default enable file upload for products"
-msgstr "Standardmäßig Dateiupload für Produkte erlauben"
-
-#: admin/umf-settings.php:187
+#: ../admin/umf-settings.php:116
 msgid "Define your own upload path"
 msgstr "Eigenen Upload Pfad einstellen"
 
-#: admin/umf-settings.php:191
+#: ../admin/umf-settings.php:120
 msgid "Show Your Love"
 msgstr "Zeigen Sie ihre LIebe"
 
-#: admin/umf-settings.php:193
+#: ../admin/umf-settings.php:122
 #, php-format
 msgid ""
 "This plugin is developed by %s, a Dutch graphic design and webdevelopment "
@@ -216,25 +163,25 @@ msgstr ""
 "Dieses Plugin wurde entwickelt durch  %s, ein niederländisches Grafikdesign "
 "und Webentwicklungsunternehmen."
 
-#: admin/umf-settings.php:194
+#: ../admin/umf-settings.php:123
 msgid ""
 "If you are happy with this plugin please show your love by liking us on "
 "Facebook"
 msgstr "Zufrieden mit dem Plugin? Like uns auf Facebook!"
 
-#: admin/umf-settings.php:196
+#: ../admin/umf-settings.php:125
 msgid "Or"
 msgstr "Oder"
 
-#: admin/umf-settings.php:198
+#: ../admin/umf-settings.php:127
 msgid "Rate the plugin 5&#9733; on WordPress.org"
 msgstr "Bewerte das Plugin mit 5&#9733; auf WordPress.org"
 
-#: admin/umf-settings.php:199
+#: ../admin/umf-settings.php:128
 msgid "Blog about it & link to the plugin page"
 msgstr "Schreibe darüber"
 
-#: inc/umf-funct.php:22
+#: ../inc/umf-funct.php:24
 msgid ""
 "WooCommerce is not active. Please activate plugin before using WooCommerce "
 "Upload My File plugin."
@@ -242,297 +189,327 @@ msgstr ""
 "WooCommerce ist nicht aktiviert. Bitte aktivieren Sie das Plugin um "
 "WooCommerce Upload My File nutzen zu können."
 
-#: inc/umf-funct.php:28
+#: ../inc/umf-funct.php:30
 msgid "Upload My File"
 msgstr "Meine Datei hochladen"
 
-#: inc/umf-funct.php:35
+#: ../inc/umf-funct.php:37
 msgid "Upload Files"
 msgstr "Dateien hochladen"
 
-#: inc/umf-funct.php:36
+#: ../inc/umf-funct.php:38
 msgid "Uploaded Files"
 msgstr "Hochgeladene Dateien"
 
-#: inc/umf-funct.php:52
+#: ../inc/umf-funct.php:54
 #, php-format
 msgid "File for product: %s:"
 msgstr "Datei für Produkt %s:"
 
-#: inc/umf-funct.php:70
+#: ../inc/umf-funct.php:72
 #, php-format
 msgid "File #%s has not been uploaded."
 msgstr "Datei %s wurde nicht hochgeladen."
 
-#: inc/umf-funct.php:81
+#: ../inc/umf-funct.php:83
 #, php-format
 msgid "Files to be uploaded for this item: %s"
 msgstr "Dateien, die für dieses Produkt hochgeladen werden: %s"
 
-#: inc/umf-funct.php:91
+#: ../inc/umf-funct.php:93
 msgid "Enable"
 msgstr "Erlaube"
 
-#: inc/umf-funct.php:218
+#: ../inc/umf-funct.php:218
 #, php-format
 msgid "The %s file type is not allowed."
 msgstr "Der Dateityp %s ist nicht erlaubt."
 
-#: inc/umf-funct.php:227
+#: ../inc/umf-funct.php:227
 #, php-format
 msgid "The file \"%s\" is to big."
 msgstr "Die Datei \"%s\" ist zu groß."
 
-#: inc/umf-funct.php:236
+#: ../inc/umf-funct.php:236
 msgid "There was an error while uploading your file(s)."
 msgstr "Während dem Upload ihrer Dateien ist ein Fehler aufgetreten."
 
-#: inc/umf-funct.php:240
+#: ../inc/umf-funct.php:240
 msgid "There was a problem while uploading your files."
 msgstr ""
 "Ein Problem ist aufgetreten, während versucht wurde ihre Dateien hochzuladen."
 
-#: inc/umf-funct.php:240
+#: ../inc/umf-funct.php:240
 msgid "Not all files have been successfully uploaded."
 msgstr "Nicht alle Dateien wurden erfolgreich hochgeladen."
 
-#: inc/umf-funct.php:243
+#: ../inc/umf-funct.php:243
 msgid "Your file(s) were uploaded successfully."
 msgstr "Ihre Datei(en) wurden erfolgreich hochgeladen."
 
-#: inc/umf-funct.php:255 templates/emails/customer-completed-order.php:49
-#: templates/emails/customer-note.php:53
-#: templates/emails/customer-processing-order.php:49
+#: ../inc/umf-funct.php:255 ../templates/myaccount/my-orders.php:91
 msgid "Upload files"
 msgstr "Dateien hochladen"
 
-#: inc/umf-funct.php:294 templates/myaccount/my-orders.php:76
+#: ../inc/umf-funct.php:294 ../templates/myaccount/my-orders.php:75
 msgid "Upload"
 msgstr "Hochladen"
 
-#: inc/umf-funct.php:306
+#: ../inc/umf-funct.php:306
 #, php-format
 msgid "Max upload size per file: %s"
 msgstr "Max. Dateigröße pro Datei: %s"
 
-#: inc/umf-funct.php:307
+#: ../inc/umf-funct.php:307
 #, php-format
 msgid "Max total upload size: %s"
 msgstr "Max. insgesamte Dateigröße: %s"
 
-#: inc/umf-funct.php:333
+#: ../inc/umf-funct.php:332
 msgid "Allowed filetypes:"
 msgstr "Erlaubte Dateitypen:"
 
-#: inc/umf-funct.php:335
-msgid "All filetypes are allowed, except:"
-msgstr "Alle Dateitypen erlaubt, außer:"
+#: ../inc/umf-funct.php:343
+msgid "Upload file"
+msgid_plural "Upload files"
+msgstr[0] "Datei hochladen"
+msgstr[1] "Dateien hochladen"
 
-#: templates/emails/customer-completed-order.php:14
-#, php-format
-msgid ""
-"Hi there. Your recent order on %s has been completed. Your order details are "
-"shown below for your reference:"
-msgstr ""
-"Hallo! Ihre letzte Bestellung auf %s wurde fertiggestellt. Ihre "
-"Bestellungsdetails stehen unten:"
+#: ../inc/umf-funct.php:346 ../inc/umf-funct.php:348
+msgid "Login to upload your file and attach it to your order."
+msgid_plural "Login to upload your files and attach them to your order."
+msgstr[0] "Einloggen, um Datei hochzuladen und der Bestellung beizufügen."
+msgstr[1] "Einloggen, um Dateien hochzuladen und der Bestellung beizufügen."
 
-#: templates/emails/customer-completed-order.php:18
-#: templates/emails/customer-note.php:22
-#: templates/emails/customer-processing-order.php:18
-msgid "Order:"
-msgstr "Bestellung: "
-
-#: templates/emails/customer-completed-order.php:23
-#: templates/emails/customer-note.php:27
-#: templates/emails/customer-processing-order.php:23
-msgid "Product"
-msgstr "Produkt"
-
-#: templates/emails/customer-completed-order.php:24
-#: templates/emails/customer-note.php:28
-#: templates/emails/customer-processing-order.php:24
-msgid "Quantity"
-msgstr "Anzahl"
-
-#: templates/emails/customer-completed-order.php:25
-#: templates/emails/customer-note.php:29
-#: templates/emails/customer-processing-order.php:25
-msgid "Price"
-msgstr "Preis"
-
-#: templates/emails/customer-completed-order.php:50
-#: templates/emails/customer-note.php:54
-#: templates/emails/customer-processing-order.php:50
-msgid "Login to upload your files and attach them to your order."
-msgstr "Einloggen, um Dateien hochzuladen und der Bestellung beizufügen."
-
-#: templates/emails/customer-completed-order.php:54
-#: templates/emails/customer-note.php:59
-#: templates/emails/customer-processing-order.php:55
-msgid "Customer details"
-msgstr "Kundendetails"
-
-#: templates/emails/customer-completed-order.php:57
-#: templates/emails/customer-note.php:62
-#: templates/emails/customer-processing-order.php:58
-msgid "Email:"
-msgstr "E-mail:"
-
-#: templates/emails/customer-completed-order.php:60
-#: templates/emails/customer-note.php:65
-#: templates/emails/customer-processing-order.php:61
-msgid "Tel:"
-msgstr "Tel:"
-
-#: templates/emails/customer-note.php:14
-msgid "Hello, a note has just been added to your order:"
-msgstr "Hallo, eine Notiz wurde gerade zu ihrer Bestellung hinzugefügt:"
-
-#: templates/emails/customer-note.php:18
-msgid "For your reference, your order details are shown below."
-msgstr "Ihre Bestellungen werden unten angezeigt."
-
-#: templates/emails/customer-processing-order.php:14
-msgid ""
-"Your order has been received and is now being processed. Your order details "
-"are shown below for your reference:"
-msgstr ""
-"Ihre Bestellung ist eingegangen und wird bearbeitet. Ihre Bestellungsdetails "
-"sind unten sichtbar:"
-
-#: templates/myaccount/my-orders.php:26
+#: ../templates/myaccount/my-orders.php:26
 msgid "Recent Orders"
 msgstr "Letzte Bestellungen"
 
-#: templates/myaccount/my-orders.php:32
+#: ../templates/myaccount/my-orders.php:32
 msgid "Order"
 msgstr "Bestellung"
 
-#: templates/myaccount/my-orders.php:33
+#: ../templates/myaccount/my-orders.php:33
 msgid "Date"
 msgstr "Datum"
 
-#: templates/myaccount/my-orders.php:34
+#: ../templates/myaccount/my-orders.php:34
 msgid "Total"
 msgstr "Betrag"
 
-#: templates/myaccount/my-orders.php:35
+#: ../templates/myaccount/my-orders.php:35
 msgid "Files"
 msgstr "Dateien"
 
-#: templates/myaccount/my-orders.php:37
+#: ../templates/myaccount/my-orders.php:37
 msgid "Status"
 msgstr "Status"
 
-#: templates/myaccount/my-orders.php:67
-msgid "upload"
-msgstr "Hochladen"
-
-#: templates/myaccount/my-orders.php:84
+#: ../templates/myaccount/my-orders.php:98
 msgid "Pay"
 msgstr "Bezahlen"
 
-#: templates/myaccount/my-orders.php:90
+#: ../templates/myaccount/my-orders.php:104
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#: templates/myaccount/my-orders.php:95
+#: ../templates/myaccount/my-orders.php:109
 msgid "View"
 msgstr "Betrachten"
 
-msgid "Uploaden"
-msgstr "Hochladen"
+#~ msgid "General"
+#~ msgstr "Allgemein"
 
-msgid "Number of files for this order: #%s"
-msgstr "Anzahl der Dateien für diese Bestellung: %s"
+#~ msgid "PRO Settings"
+#~ msgstr "PRO Einstellungen"
 
-msgid "License key"
-msgstr "Lizenzcode"
+#~ msgid "Default enable upload:"
+#~ msgstr "Upload aktivieren als Standard:"
 
-msgid "Let's get pro!"
-msgstr "Pro Kaufen!"
+#~ msgid "No"
+#~ msgstr "Nein"
 
-msgid ""
-"You can buy an license key from our website. When using WooCOmmerce Upload "
-"My File Pro you are able to use more features. Check our website for more "
-"information."
-msgstr ""
-"Sie können einen Lizenzcode auf unserer Webseite Kaufen. Bei WooCommerce "
-"Upload My File Pro gibt es weitere Funktionen. Gehen Sie auf unsere Webseite "
-"für weitere Informationen."
+#~ msgid "Yes"
+#~ msgstr "Ja"
 
-msgid "License Key"
-msgstr "Lizenzcode"
+#~ msgid "Default enable file upload for all products"
+#~ msgstr "Standardmäßig Dateiupload für alle Produkte aktivieren"
 
-msgid ""
-"Copy Paste your license key to activate WooCommerce Upload My File Pro. "
-"After activation you are able to download the PRO version."
-msgstr ""
-"Kopieren Sie und fügen Sie ihren Lizenzcode ein, um WooCommerce Upload My "
-"File Pro zu aktivieren. Nach der Aktivierung können sie die PRO Version "
-"herunterladen."
+#~ msgid "Default upload limit:"
+#~ msgstr "Standard upload Limit:"
 
-msgid "Save License Key"
-msgstr "Lizenzcode speichern"
+#~ msgid "Specify the default upload limit."
+#~ msgstr "Geben Sie das Standard upload Limit an."
 
-msgid "Need Support?"
-msgstr "Brauchen Sie Hilfe?"
+#~ msgid "Upload path:"
+#~ msgstr "Upload pfad:"
 
-msgid "If you are having problems with this plugin, please contact us via our "
-msgstr ""
-"Falls Probleme mit diesem Plugin auftreten, kontaktieren Sie uns bitte über "
-"unser"
+#~ msgid ""
+#~ "Upload path for new uploads. Subfolders with the order-ID will be created "
+#~ "within this directory."
+#~ msgstr ""
+#~ "Pfad für neue Uploads. Unterordner mit der Bestellungs-ID werden in "
+#~ "diesem Ordner erstellt."
 
-msgid "We will try to support you as soon as possible, mostly within 24 hours."
-msgstr ""
-"Wir versuchen ihnen so schnell wie möglich zu helfen, meistens innerhalb von "
-"24 Stunden."
+#~ msgid "Whitelist or Blacklist files:"
+#~ msgstr "Whitelist oder Blacklist Dateien:"
 
-msgid ""
-"On our website you will also find some basic support information for this "
-"plugin."
-msgstr ""
-"Auf unserer Webseite finden Sie auch grundlegende Supportinformationen für "
-"dieses Plugin. "
+#~ msgid "whitelist"
+#~ msgstr "whitelist"
 
-msgid "Limit"
-msgstr "Limit"
+#~ msgid "blacklist"
+#~ msgstr "blacklist"
 
-msgid "The file \"%s\" is succesfully deleted."
-msgstr "Die Datei \"%s\" wurde gelöscht."
+#~ msgid "Specify if you want to whitelist or blacklist file types."
+#~ msgstr "Geben Sie an ob sie Dateitypen whitelisten oder blacklisten wollen."
 
-msgid "Change settings for Upload My File plugin."
-msgstr "Einstellungen für das Upload My File Plugin verändern."
+#~ msgid "Allow more than one upload per product"
+#~ msgstr "Mehr als ein Upload pro Produkt zulassen"
 
-msgid "An unknown error occurred"
-msgstr "Ein unbekannter Fehler ist aufgetreten"
+#~ msgid "Default enable file upload for products"
+#~ msgstr "Standardmäßig Dateiupload für Produkte erlauben"
 
-msgid "File #%s: <a href=\"%s\" target=\"_blank\">%s</a>"
-msgstr "Datei %s: <a href=\"%s\" target=\"_blank\">%s</a>"
+#~ msgid "All filetypes are allowed, except:"
+#~ msgstr "Alle Dateitypen erlaubt, außer:"
 
-msgid "Upload file for:"
-msgstr "Datei hochladen für:"
+#~ msgid ""
+#~ "Hi there. Your recent order on %s has been completed. Your order details "
+#~ "are shown below for your reference:"
+#~ msgstr ""
+#~ "Hallo! Ihre letzte Bestellung auf %s wurde fertiggestellt. Ihre "
+#~ "Bestellungsdetails stehen unten:"
 
-msgid "Orderdate"
-msgstr "Bestelldatum"
+#~ msgid "Order:"
+#~ msgstr "Bestellung: "
 
-msgid "Ship to"
-msgstr "Verschicken zu"
+#~ msgid "Product"
+#~ msgstr "Produkt"
 
-msgid "Click to cancel this order"
-msgstr "Klicken Sie, um die Bestellung abzubrechen"
+#~ msgid "Quantity"
+#~ msgstr "Anzahl"
 
-msgid "You have no recent orders."
-msgstr "Sie haben keine, kürzlich getätigten, Bestellungen."
+#~ msgid "Price"
+#~ msgstr "Preis"
 
-msgid ""
-"An order has been created for you on &ldquo;%s&rdquo;. To pay for this order "
-"please use the following link: <a href=\"%s\">Pay</a>"
-msgstr ""
-"Eine Bestellung wurde für Sie erstellt auf &ldquo;%s&rdquo;. Um diese "
-"Bestellung zu bezahlen klicken Sie bitte auf folgenden Link: <a href=\"%s"
-"\">Bezahlen</a>"
+#~ msgid "Customer details"
+#~ msgstr "Kundendetails"
 
-msgid "jS F Y"
-msgstr "jS F Y"
+#~ msgid "Email:"
+#~ msgstr "E-mail:"
+
+#~ msgid "Tel:"
+#~ msgstr "Tel:"
+
+#~ msgid "Hello, a note has just been added to your order:"
+#~ msgstr "Hallo, eine Notiz wurde gerade zu ihrer Bestellung hinzugefügt:"
+
+#~ msgid "For your reference, your order details are shown below."
+#~ msgstr "Ihre Bestellungen werden unten angezeigt."
+
+#~ msgid ""
+#~ "Your order has been received and is now being processed. Your order "
+#~ "details are shown below for your reference:"
+#~ msgstr ""
+#~ "Ihre Bestellung ist eingegangen und wird bearbeitet. Ihre "
+#~ "Bestellungsdetails sind unten sichtbar:"
+
+#~ msgid "upload"
+#~ msgstr "Hochladen"
+
+#~ msgid "Uploaden"
+#~ msgstr "Hochladen"
+
+#~ msgid "Number of files for this order: #%s"
+#~ msgstr "Anzahl der Dateien für diese Bestellung: %s"
+
+#~ msgid "License key"
+#~ msgstr "Lizenzcode"
+
+#~ msgid "Let's get pro!"
+#~ msgstr "Pro Kaufen!"
+
+#~ msgid ""
+#~ "You can buy an license key from our website. When using WooCOmmerce "
+#~ "Upload My File Pro you are able to use more features. Check our website "
+#~ "for more information."
+#~ msgstr ""
+#~ "Sie können einen Lizenzcode auf unserer Webseite Kaufen. Bei WooCommerce "
+#~ "Upload My File Pro gibt es weitere Funktionen. Gehen Sie auf unsere "
+#~ "Webseite für weitere Informationen."
+
+#~ msgid "License Key"
+#~ msgstr "Lizenzcode"
+
+#~ msgid ""
+#~ "Copy Paste your license key to activate WooCommerce Upload My File Pro. "
+#~ "After activation you are able to download the PRO version."
+#~ msgstr ""
+#~ "Kopieren Sie und fügen Sie ihren Lizenzcode ein, um WooCommerce Upload My "
+#~ "File Pro zu aktivieren. Nach der Aktivierung können sie die PRO Version "
+#~ "herunterladen."
+
+#~ msgid "Save License Key"
+#~ msgstr "Lizenzcode speichern"
+
+#~ msgid "Need Support?"
+#~ msgstr "Brauchen Sie Hilfe?"
+
+#~ msgid ""
+#~ "If you are having problems with this plugin, please contact us via our "
+#~ msgstr ""
+#~ "Falls Probleme mit diesem Plugin auftreten, kontaktieren Sie uns bitte "
+#~ "über unser"
+
+#~ msgid ""
+#~ "We will try to support you as soon as possible, mostly within 24 hours."
+#~ msgstr ""
+#~ "Wir versuchen ihnen so schnell wie möglich zu helfen, meistens innerhalb "
+#~ "von 24 Stunden."
+
+#~ msgid ""
+#~ "On our website you will also find some basic support information for this "
+#~ "plugin."
+#~ msgstr ""
+#~ "Auf unserer Webseite finden Sie auch grundlegende Supportinformationen "
+#~ "für dieses Plugin. "
+
+#~ msgid "Limit"
+#~ msgstr "Limit"
+
+#~ msgid "The file \"%s\" is succesfully deleted."
+#~ msgstr "Die Datei \"%s\" wurde gelöscht."
+
+#~ msgid "Change settings for Upload My File plugin."
+#~ msgstr "Einstellungen für das Upload My File Plugin verändern."
+
+#~ msgid "An unknown error occurred"
+#~ msgstr "Ein unbekannter Fehler ist aufgetreten"
+
+#~ msgid "File #%s: <a href=\"%s\" target=\"_blank\">%s</a>"
+#~ msgstr "Datei %s: <a href=\"%s\" target=\"_blank\">%s</a>"
+
+#~ msgid "Upload file for:"
+#~ msgstr "Datei hochladen für:"
+
+#~ msgid "Orderdate"
+#~ msgstr "Bestelldatum"
+
+#~ msgid "Ship to"
+#~ msgstr "Verschicken zu"
+
+#~ msgid "Click to cancel this order"
+#~ msgstr "Klicken Sie, um die Bestellung abzubrechen"
+
+#~ msgid "You have no recent orders."
+#~ msgstr "Sie haben keine, kürzlich getätigten, Bestellungen."
+
+#~ msgid ""
+#~ "An order has been created for you on &ldquo;%s&rdquo;. To pay for this "
+#~ "order please use the following link: <a href=\"%s\">Pay</a>"
+#~ msgstr ""
+#~ "Eine Bestellung wurde für Sie erstellt auf &ldquo;%s&rdquo;. Um diese "
+#~ "Bestellung zu bezahlen klicken Sie bitte auf folgenden Link: <a href=\"%s"
+#~ "\">Bezahlen</a>"
+
+#~ msgid "jS F Y"
+#~ msgstr "jS F Y"

@@ -331,4 +331,23 @@ function woo_um_get_allowed_filetypes($product_id) {
 	}
 	return __('Allowed filetypes:','woocommerce-umf').' '.$filetypes;
 }
+
+/**
+ * attach email link to emails, this removes the email templates inside /woocommerce-upload-my-file/templates/
+ * @since 0.1
+ */
+function umf_mail($order) {
+	$count=get_max_upload_count($order);
+	if($count>0) {
+		if(check_for_files($order->id)=='upload') {
+			echo '<h2>'._n('Upload file','Upload files', $count, 'woocommerce-umf' ).'</h2>';
+			
+			if ( version_compare( WOOCOMMERCE_VERSION, "2.1" ) <= 0 ) {
+				echo '<p><a href="'. esc_url( add_query_arg('order', $order->id,get_permalink(woocommerce_get_page_id('view_order'))) ).'" ><span>'._n( 'Login to upload your file and attach it to your order.', 'Login to upload your files and attach them to your order.', $count, 'woocommerce-umf' ).'</span></a>';
+			} else {
+				echo '<p><a href="'. esc_url( $order->get_view_order_url() ).'" ><span>'._n( 'Login to upload your file and attach it to your order.', 'Login to upload your files and attach them to your order.', $count, 'woocommerce-umf' ).'</span></a>';
+			}
+		}
+	}
+}
 ?>

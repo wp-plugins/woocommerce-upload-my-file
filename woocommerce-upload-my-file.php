@@ -3,7 +3,7 @@
 Plugin Name: WooCommerce Upload My File
 Plugin URI: http://wordpress.geev.nl/product/woocommerce-upload-my-file/
 Description: This plugin provides the possibility to upload files in WooCommerce after ordering. - Free Version
-Version: 0.3
+Version: 0.3.1
 Author: Geev vormgeeving
 Author URI: http://wordpress.geev.nl/
 */
@@ -32,6 +32,7 @@ if (is_woocommerce_active()) {
 	add_action('add_meta_boxes', 'woocommerce_umf_add_box');
 	add_action( 'save_post', 'save_meta_settings' );
 	add_action( 'woocommerce_view_order','upload_files_field' );
+	add_action('woocommerce_email_after_order_table', 'umf_mail');
 	
 	// If frontend styling is on, load styles in footer
 	if(get_option( 'woocommerce_umf_use_style')=='on') {
@@ -69,4 +70,22 @@ function umf_plugin_links($links) {
 }
 $plugin = plugin_basename(__FILE__); 
 add_filter("plugin_action_links_$plugin", 'umf_plugin_links' );
+
+
+$file   = basename( __FILE__ );
+$folder = basename( dirname( __FILE__ ) );
+$hook = "in_plugin_update_message-{$folder}/{$file}";
+add_action( $hook, 'geev_umf_update_message', 10, 2 ); 
+
+function geev_umf_update_message( $plugin_data, $r )
+{
+	$readme=file_get_contents('http://plugins.svn.wordpress.org/woocommerce-upload-my-file/tags/'.$r->new_version.'/readme.txt');
+	
+	$upgrade_notice=explode('== Upgrade Notice ==',$readme);
+	$upgrade_notice=explode('== Usage ==',$upgrade_notice[1]);
+	$upgrade_notice=explode('|',$upgrade_notice[0]);
+	if($upgrade_notice[1]!="") {
+		echo '<p>'.trim($upgrade_notice[1]).'</p>';
+	}
+}
 ?>

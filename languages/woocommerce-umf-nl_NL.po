@@ -1,17 +1,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WooCommerce Upload My File\n"
-"POT-Creation-Date: 2014-01-12 15:33+0100\n"
-"PO-Revision-Date: 2014-01-12 15:33+0100\n"
+"POT-Creation-Date: 2014-03-12 21:21+0100\n"
+"PO-Revision-Date: 2014-03-12 21:24+0100\n"
 "Last-Translator: Bart Pluijms <info@geev.nl>\n"
 "Language-Team: Geev vormgeeving <info@geev.nl>\n"
 "Language: nl_NL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.1\n"
-"X-Poedit-KeywordsList: _;__;_e\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-KeywordsList: _;__;_e;_n:1,2;_n_noop:1,2;_nx:1,2;_nx_noop:1,2\n"
 "X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../admin/umf-settings.php:7
@@ -114,15 +115,15 @@ msgstr "Nieuw"
 
 #: ../admin/umf-settings.php:112
 msgid "Use an AJAX Uploader with progress bar"
-msgstr "Gebruik een AJAX Upload met voortgangsindicator"
+msgstr "Gebruik een AJAX uploader met voortgangsindicator"
 
 #: ../admin/umf-settings.php:113
 msgid "Upload LARGE ( > 100 MB) files"
-msgstr "Upload grote bestanden (>100 MB)"
+msgstr "Upload grote bestanden (> 100 MB)"
 
 #: ../admin/umf-settings.php:114
 msgid "Send admin notifications after upload"
-msgstr "Verstuur een admin notificatie na uploaden"
+msgstr "Verstuur admin notificaties na uploaden"
 
 #: ../admin/umf-settings.php:115
 msgid "Specify upload titles per product."
@@ -243,11 +244,7 @@ msgstr "Niet alle bestanden zijn succesvol geupload."
 msgid "Your file(s) were uploaded successfully."
 msgstr "Je bestand(en) zijn succesvol toegevoegd."
 
-#: ../inc/umf-funct.php:255
-#: ../templates/emails/customer-completed-order.php:49
-#: ../templates/emails/customer-note.php:53
-#: ../templates/emails/customer-processing-order.php:49
-#: ../templates/myaccount/my-orders.php:91
+#: ../inc/umf-funct.php:255 ../templates/myaccount/my-orders.php:91
 msgid "Upload files"
 msgstr "Upload bestanden"
 
@@ -269,80 +266,22 @@ msgstr "Max. totale upload grootte: %s"
 msgid "Allowed filetypes:"
 msgstr "Toegestane bestandstypen:"
 
-#: ../templates/emails/customer-completed-order.php:14
-#, php-format
-msgid ""
-"Hi there. Your recent order on %s has been completed. Your order details are "
-"shown below for your reference:"
-msgstr ""
-"Uw bestelling op %s is voltooid. De details van uw bestelling staan "
-"hieronder: "
+#: ../inc/umf-funct.php:343
+msgid "Upload file"
+msgid_plural "Upload files"
+msgstr[0] "Upload bestand"
+msgstr[1] "Upload bestanden"
 
-#: ../templates/emails/customer-completed-order.php:18
-#: ../templates/emails/customer-note.php:22
-#: ../templates/emails/customer-processing-order.php:18
-msgid "Order:"
-msgstr "Bestelling: "
-
-#: ../templates/emails/customer-completed-order.php:23
-#: ../templates/emails/customer-note.php:27
-#: ../templates/emails/customer-processing-order.php:23
-msgid "Product"
-msgstr "Product"
-
-#: ../templates/emails/customer-completed-order.php:24
-#: ../templates/emails/customer-note.php:28
-#: ../templates/emails/customer-processing-order.php:24
-msgid "Quantity"
-msgstr "Aantal"
-
-#: ../templates/emails/customer-completed-order.php:25
-#: ../templates/emails/customer-note.php:29
-#: ../templates/emails/customer-processing-order.php:25
-msgid "Price"
-msgstr "Prijs"
-
-#: ../templates/emails/customer-completed-order.php:50
-#: ../templates/emails/customer-note.php:54
-#: ../templates/emails/customer-processing-order.php:50
-msgid "Login to upload your files and attach them to your order."
-msgstr "Log in in uw account om bestanden te uploaden voor deze bestelling."
-
-#: ../templates/emails/customer-completed-order.php:54
-#: ../templates/emails/customer-note.php:59
-#: ../templates/emails/customer-processing-order.php:55
-msgid "Customer details"
-msgstr "Klant details"
-
-#: ../templates/emails/customer-completed-order.php:57
-#: ../templates/emails/customer-note.php:62
-#: ../templates/emails/customer-processing-order.php:58
-msgid "Email:"
-msgstr "E-mail adres:"
-
-#: ../templates/emails/customer-completed-order.php:60
-#: ../templates/emails/customer-note.php:65
-#: ../templates/emails/customer-processing-order.php:61
-msgid "Tel:"
-msgstr "Tel:"
-
-#: ../templates/emails/customer-note.php:14
-msgid "Hello, a note has just been added to your order:"
-msgstr ""
-
-#: ../templates/emails/customer-note.php:18
-msgid "For your reference, your order details are shown below."
-msgstr ""
-
-#: ../templates/emails/customer-processing-order.php:14
-msgid ""
-"Your order has been received and is now being processed. Your order details "
-"are shown below for your reference:"
-msgstr ""
+#: ../inc/umf-funct.php:346 ../inc/umf-funct.php:348
+msgid "Login to upload your file and attach it to your order."
+msgid_plural "Login to upload your files and attach them to your order."
+msgstr[0] ""
+"Log in in uw account om het bestand te uploaden voor deze bestelling."
+msgstr[1] "Log in in uw account om bestanden te uploaden voor deze bestelling."
 
 #: ../templates/myaccount/my-orders.php:26
 msgid "Recent Orders"
-msgstr ""
+msgstr "Recente bestellingen"
 
 #: ../templates/myaccount/my-orders.php:32
 msgid "Order"
@@ -427,6 +366,34 @@ msgstr "Bekijken"
 
 #~ msgid "Default enable file upload for products"
 #~ msgstr "Sta uploaden standaard toe voor producten"
+
+#~ msgid ""
+#~ "Hi there. Your recent order on %s has been completed. Your order details "
+#~ "are shown below for your reference:"
+#~ msgstr ""
+#~ "Uw bestelling op %s is voltooid. De details van uw bestelling staan "
+#~ "hieronder: "
+
+#~ msgid "Order:"
+#~ msgstr "Bestelling: "
+
+#~ msgid "Product"
+#~ msgstr "Product"
+
+#~ msgid "Quantity"
+#~ msgstr "Aantal"
+
+#~ msgid "Price"
+#~ msgstr "Prijs"
+
+#~ msgid "Customer details"
+#~ msgstr "Klant details"
+
+#~ msgid "Email:"
+#~ msgstr "E-mail adres:"
+
+#~ msgid "Tel:"
+#~ msgstr "Tel:"
 
 #~ msgid "upload"
 #~ msgstr "Uploaden"
