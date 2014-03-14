@@ -1,0 +1,509 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Upload My File\n"
+"POT-Creation-Date: 2014-03-12 21:22+0100\n"
+"PO-Revision-Date: 2014-03-12 21:22+0100\n"
+"Last-Translator: Bart Pluijms <info@geev.nl>\n"
+"Language-Team: www.qooqnos.com <khalil.delavaran@gmail.com>\n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-KeywordsList: _;__;_e;_n:1,2;_n_noop:1,2;_nx:1,2;_nx_noop:1,2\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../admin/umf-settings.php:7
+msgid "You do not have sufficient permissions to access this page."
+msgstr "شما مجوز کافی برای دسترسی به این صفحه را ندارید."
+
+#: ../admin/umf-settings.php:23
+msgid "WooCommerce - Upload My File"
+msgstr "افزونه آپلود فایل برای ووکامرس"
+
+#: ../admin/umf-settings.php:25
+msgid "Your settings have been saved."
+msgstr "پیکربندی شما انباره گردید"
+
+#: ../admin/umf-settings.php:33
+msgid "General Settings"
+msgstr "پیکربندی همگانی"
+
+#: ../admin/umf-settings.php:38
+msgid "Allowed file types:"
+msgstr "اجازه دادن به گونه فایل :"
+
+#: ../admin/umf-settings.php:43
+msgid "Specify which file types are allowed for uploading, seperate by commas."
+msgstr "برای جدا کردن گونه های فایل برای بارگذاری مجاز، کاما بکار ببرید"
+
+#: ../admin/umf-settings.php:49
+msgid "Max. upload size:"
+msgstr "بیشترین اندازه بارگذاری:"
+
+#: ../admin/umf-settings.php:54
+msgid ""
+"Specify maximum upload size for all files in MegaBytes. Cannot exceed max. "
+"PHP upload size."
+msgstr ""
+"مشخص کردن بیشینه مقدار بارگذاری برای همه فایل ها، این مقدار نمی تواند بیش از "
+"اندازه تعیین شده در php  (واحد مگابایت) شود"
+
+#: ../admin/umf-settings.php:55
+msgid "Note: recommended max. upload size below 8MB."
+msgstr "گوشزد: بیشترین اندازه بارگذاری 8مگابایت می باشد"
+
+#: ../admin/umf-settings.php:62
+msgid "Required status(es):"
+msgstr "وضعیت مورد نیاز (ES):"
+
+#: ../admin/umf-settings.php:79
+msgid "Specify which order statuses will allow customers to upload files."
+msgstr ""
+"مشخص کنید که کدام وضعیت های سفارش، اجازه بارگذاری فایل به مشتریان خواهد داد"
+
+#: ../admin/umf-settings.php:85
+msgid "Styling"
+msgstr "نمای طراحی شده"
+
+#: ../admin/umf-settings.php:88
+msgid "Enable WooCommerce Upload My File CSS:"
+msgstr " فعال کردن CSS پیش فرض افزونه:"
+
+#: ../admin/umf-settings.php:90
+msgid ""
+"We've made some default styling for the frontend. Do you want to use it?"
+msgstr "ما  یک نمای پیش فرض ساخته ایم. آیا شما می خواهید آنرا بکار ببرید؟"
+
+#: ../admin/umf-settings.php:96
+msgid "Save Changes"
+msgstr "دگرگونی ها ذخیره شود"
+
+#: ../admin/umf-settings.php:105
+msgid "Buy Pro!"
+msgstr "خرید نسخه حرفه ای!"
+
+#: ../admin/umf-settings.php:107
+msgid "Check out our "
+msgstr "ما را بررسی کنید"
+
+#: ../admin/umf-settings.php:107
+msgid "to find out more about WooCommerce Upload My File Pro."
+msgstr ""
+"برای پیدا کردن اطلاعات بیشتر در مورد نسخه حرفه ای افزونه آپلود فایل برای "
+"ووکامرس"
+
+#: ../admin/umf-settings.php:108
+#, fuzzy
+msgid ""
+"For only &euro; 29,00 you will get a lot of features and access to our "
+"support section."
+msgstr ""
+"فقط با پرداخت 25 یورو شما به بسیاری از ویژگی ها و پشتیبانی ما دسترسی خواهید "
+"داشت "
+
+#: ../admin/umf-settings.php:109
+msgid "A couple of features:"
+msgstr "ویژگی ها:"
+
+#: ../admin/umf-settings.php:112 ../admin/umf-settings.php:113
+#: ../admin/umf-settings.php:114
+msgid "New"
+msgstr "جدید"
+
+#: ../admin/umf-settings.php:112
+msgid "Use an AJAX Uploader with progress bar"
+msgstr ""
+
+#: ../admin/umf-settings.php:113
+msgid "Upload LARGE ( > 100 MB) files"
+msgstr ""
+
+#: ../admin/umf-settings.php:114
+msgid "Send admin notifications after upload"
+msgstr ""
+
+#: ../admin/umf-settings.php:115
+msgid "Specify upload titles per product."
+msgstr "تعیین عنوان بارگذاری برای محصولات مشخص شده"
+
+#: ../admin/umf-settings.php:115
+msgid "File preview"
+msgstr "پیش نمایش فایل"
+
+#: ../admin/umf-settings.php:116
+msgid "Preview thumbnails of uploaded files"
+msgstr "پیش نمایش فایل های بارگذاری شده"
+
+#: ../admin/umf-settings.php:116
+msgid "White or blacklist file types"
+msgstr "گونه های فایل لیست سفید یا سیاه"
+
+#: ../admin/umf-settings.php:116
+msgid "Let users delete files"
+msgstr "اجازه پاک کردن فایل ها به کاربران"
+
+#: ../admin/umf-settings.php:116
+msgid "Define your own upload path"
+msgstr "دگرگونی مسیر بارگذاری"
+
+#: ../admin/umf-settings.php:120
+msgid "Show Your Love"
+msgstr "نمایش علاقه مندی های شما"
+
+#: ../admin/umf-settings.php:122
+#, php-format
+msgid ""
+"This plugin is developed by %s, a Dutch graphic design and webdevelopment "
+"company."
+msgstr ""
+"این افزونه توسط %s  , که یه گرافیسیت هلندی است و شرکت webdevelopment  ساخته "
+"شده است همچنین توسط آقای خلیل دلاوران در شرکت Qooqnos به زبان شیرین پارسی "
+"ترجمه شده است "
+
+#: ../admin/umf-settings.php:123
+msgid ""
+"If you are happy with this plugin please show your love by liking us on "
+"Facebook"
+msgstr "اگر شما از این افزونه خوشتان آمده است لطفا ما در فیسبوک لایک کنید"
+
+#: ../admin/umf-settings.php:125
+msgid "Or"
+msgstr "یا"
+
+#: ../admin/umf-settings.php:127
+msgid "Rate the plugin 5&#9733; on WordPress.org"
+msgstr "سنجش این افزونه 5&#9733  در worpress.org"
+
+#: ../admin/umf-settings.php:128
+msgid "Blog about it & link to the plugin page"
+msgstr "وبلاگ افزونه و لینک به برگه افزونه"
+
+#: ../inc/umf-funct.php:24
+msgid ""
+"WooCommerce is not active. Please activate plugin before using WooCommerce "
+"Upload My File plugin."
+msgstr ""
+"ووکامرس فعال نشده است. لطفا قبل از استفاده از این افزونه، ووکامرس را فعال "
+"کنید "
+
+#: ../inc/umf-funct.php:30
+msgid "Upload My File"
+msgstr "بارگذاری فایل"
+
+#: ../inc/umf-funct.php:37
+msgid "Upload Files"
+msgstr "فایلهای بارگذاری"
+
+#: ../inc/umf-funct.php:38
+msgid "Uploaded Files"
+msgstr "فایلهای بارگذاری شده"
+
+#: ../inc/umf-funct.php:54
+#, php-format
+msgid "File for product: %s:"
+msgstr "فایل برای محصول: %s:"
+
+#: ../inc/umf-funct.php:72
+#, php-format
+msgid "File #%s has not been uploaded."
+msgstr "فایل #%s بارگذاری شده است"
+
+#: ../inc/umf-funct.php:83
+#, php-format
+msgid "Files to be uploaded for this item: %s"
+msgstr "فایل های بارگذاری شده برای این آیتم: %s"
+
+#: ../inc/umf-funct.php:93
+msgid "Enable"
+msgstr "فعال"
+
+#: ../inc/umf-funct.php:218
+#, php-format
+msgid "The %s file type is not allowed."
+msgstr " اجازه ندارد  %s فایل با پسوند  ."
+
+#: ../inc/umf-funct.php:227
+#, php-format
+msgid "The file \"%s\" is to big."
+msgstr "فایل \"%s\" بسیار بزرگ از حد مجاز است"
+
+#: ../inc/umf-funct.php:236
+msgid "There was an error while uploading your file(s)."
+msgstr "در حین بارگذاری فایل شما خطایی رخ داده است"
+
+#: ../inc/umf-funct.php:240
+msgid "There was a problem while uploading your files."
+msgstr "در بارگذاری فایل شما، یک مشکل وجود دارد"
+
+#: ../inc/umf-funct.php:240
+msgid "Not all files have been successfully uploaded."
+msgstr "همه فایل با موفقیت بارگذاری شد"
+
+#: ../inc/umf-funct.php:243
+msgid "Your file(s) were uploaded successfully."
+msgstr "فایل(های) شما با موفقیت بارگذاری شد"
+
+#: ../inc/umf-funct.php:255 ../templates/myaccount/my-orders.php:91
+msgid "Upload files"
+msgstr "بارگذاری فایل ها"
+
+#: ../inc/umf-funct.php:294 ../templates/myaccount/my-orders.php:75
+msgid "Upload"
+msgstr "بارگذاری"
+
+#: ../inc/umf-funct.php:306
+#, php-format
+msgid "Max upload size per file: %s"
+msgstr "بیشترین اندازه فایل برای بارگذاری: %s"
+
+#: ../inc/umf-funct.php:307
+#, php-format
+msgid "Max total upload size: %s"
+msgstr "بیشترین اندازه همه بارگذاری: %s"
+
+#: ../inc/umf-funct.php:332
+msgid "Allowed filetypes:"
+msgstr "گونه فایل های اجازه داده شده:"
+
+#: ../inc/umf-funct.php:343
+#, fuzzy
+msgid "Upload file"
+msgid_plural "Upload files"
+msgstr[0] "بارگذاری فایل ها"
+
+#: ../inc/umf-funct.php:346 ../inc/umf-funct.php:348
+#, fuzzy
+msgid "Login to upload your file and attach it to your order."
+msgid_plural "Login to upload your files and attach them to your order."
+msgstr[0] "ورود برای بارگذاری فایل های شما و افزودن آنها به سفارشتان"
+
+#: ../templates/myaccount/my-orders.php:26
+msgid "Recent Orders"
+msgstr "تازه ترین سفارش ها"
+
+#: ../templates/myaccount/my-orders.php:32
+msgid "Order"
+msgstr "سفارش"
+
+#: ../templates/myaccount/my-orders.php:33
+msgid "Date"
+msgstr "روز"
+
+#: ../templates/myaccount/my-orders.php:34
+msgid "Total"
+msgstr "رویهمرفته"
+
+#: ../templates/myaccount/my-orders.php:35
+msgid "Files"
+msgstr "فایل ها"
+
+#: ../templates/myaccount/my-orders.php:37
+msgid "Status"
+msgstr "چگونگی"
+
+#: ../templates/myaccount/my-orders.php:98
+msgid "Pay"
+msgstr "پرداخت"
+
+#: ../templates/myaccount/my-orders.php:104
+msgid "Cancel"
+msgstr "انصراف"
+
+#: ../templates/myaccount/my-orders.php:109
+msgid "View"
+msgstr "نمایش"
+
+#~ msgid "General"
+#~ msgstr "همگانی"
+
+#~ msgid "PRO Settings"
+#~ msgstr "تنظیمات نسخه حرفه ای"
+
+#~ msgid "Default enable upload:"
+#~ msgstr "پیش فرض فعال کردن بارگذاری:"
+
+#~ msgid "No"
+#~ msgstr "نه"
+
+#~ msgid "Yes"
+#~ msgstr "بله"
+
+#~ msgid "Default enable file upload for all products"
+#~ msgstr "پیش فرض: فعال بودن بارگذاری فایل برای همه محصولات"
+
+#~ msgid "Default upload limit:"
+#~ msgstr "پیش فرض محدودیت بارگذاری:"
+
+#~ msgid "Specify the default upload limit."
+#~ msgstr "تعیین پیش فرض محدودیت بارگذاری"
+
+#~ msgid "Upload path:"
+#~ msgstr "مسیر بارگذاری:"
+
+#~ msgid ""
+#~ "Upload path for new uploads. Subfolders with the order-ID will be created "
+#~ "within this directory."
+#~ msgstr ""
+#~ "تعیین مسیر برای بارگذاری های جدید. زیرشاخه ای با مشخصه سفارش (order-ID) "
+#~ "در این شاخه ساخته می شود"
+
+#~ msgid "Whitelist or Blacklist files:"
+#~ msgstr "فایل های لیست سپید یا سیاه:"
+
+#~ msgid "whitelist"
+#~ msgstr "لیست سپید"
+
+#~ msgid "blacklist"
+#~ msgstr "لیست سیاه"
+
+#~ msgid "Specify if you want to whitelist or blacklist file types."
+#~ msgstr "مشخص کردن  لیست سیاه یا سپید برای گونه های فایل"
+
+#~ msgid "Allow more than one upload per product"
+#~ msgstr "اجازه برای بارگذاری بیشتر از یک فایل برای محصولات مشخص"
+
+#~ msgid "Default enable file upload for products"
+#~ msgstr "پیش فرض فعال کردن فایل بارگذاری برای محصولات"
+
+#~ msgid "All filetypes are allowed, except:"
+#~ msgstr "همه گونه های فایل اجازه دارند، به جز:"
+
+#~ msgid ""
+#~ "Hi there. Your recent order on %s has been completed. Your order details "
+#~ "are shown below for your reference:"
+#~ msgstr ""
+#~ "درود بر شما . آخرین سفارش شما %s کامل شده است. جزییات سفارش شما به عنوان "
+#~ "سند در زیر نشان داده شده است:"
+
+#~ msgid "Order:"
+#~ msgstr "سفارش:"
+
+#~ msgid "Product"
+#~ msgstr "محصول"
+
+#~ msgid "Quantity"
+#~ msgstr "کمیت"
+
+#~ msgid "Price"
+#~ msgstr "قیمت"
+
+#~ msgid "Customer details"
+#~ msgstr "مشخصات مشتری"
+
+#~ msgid "Email:"
+#~ msgstr "ایمیل:"
+
+#~ msgid "Tel:"
+#~ msgstr "تلفن:"
+
+#~ msgid "Hello, a note has just been added to your order:"
+#~ msgstr "خوش آمدید، توجه داشته باشید  فقط به سفارش شما اضافه شده است:"
+
+#~ msgid "For your reference, your order details are shown below."
+#~ msgstr "برای سند ، جزئیات سفارش شما در زیر نشان داده شده است."
+
+#~ msgid ""
+#~ "Your order has been received and is now being processed. Your order "
+#~ "details are shown below for your reference:"
+#~ msgstr ""
+#~ "سفارش شما دریافت شده است و در حال حاضر در حال پردازش است. جزئیات سفارش "
+#~ "شما به عنوان سند در زیر نشان داده شده است:"
+
+#~ msgid "upload"
+#~ msgstr "بارگذاری"
+
+#~ msgid "Uploaden"
+#~ msgstr "Uploaden"
+
+#~ msgid "Number of files for this order: #%s"
+#~ msgstr "Aantal te uploaden bestanden voor deze bestelling: %s"
+
+#~ msgid "License key"
+#~ msgstr "Licentiecode"
+
+#~ msgid "Let's get pro!"
+#~ msgstr "Let's get pro!"
+
+#~ msgid ""
+#~ "You can buy an license key from our website. When using WooCOmmerce "
+#~ "Upload My File Pro you are able to use more features. Check our website "
+#~ "for more information."
+#~ msgstr ""
+#~ "Je kan een licentiecode kopen via onze website. Wanneer je gebruik maakt "
+#~ "van WooCommerce Upload My File Pro krijg je veel meer functionaliteiten. "
+#~ "Bekijk onze website voor meer informatie."
+
+#~ msgid "License Key"
+#~ msgstr "Licentiecode"
+
+#~ msgid ""
+#~ "Copy Paste your license key to activate WooCommerce Upload My File Pro. "
+#~ "After activation you are able to download the PRO version."
+#~ msgstr ""
+#~ "Knip & plak je licentiecode om WooCommerce Upload My File Pro te "
+#~ "activeren. Na activatie kan je de PRO versie downloaden."
+
+#~ msgid "Save License Key"
+#~ msgstr "Licentiecode opslaan"
+
+#~ msgid "Need Support?"
+#~ msgstr "Hulp nodig?"
+
+#~ msgid ""
+#~ "If you are having problems with this plugin, please contact us via our "
+#~ msgstr "Blij met deze plugin? Like ons op Facebook!"
+
+#~ msgid ""
+#~ "We will try to support you as soon as possible, mostly within 24 hours."
+#~ msgstr ""
+#~ "We doen onze best om je zo snel mogelijk te helpen met je vragen, meestal "
+#~ "binnen 24 uur."
+
+#~ msgid ""
+#~ "On our website you will also find some basic support information for this "
+#~ "plugin."
+#~ msgstr "Op onze website vind je ook basis help informatie voor deze plugin."
+
+#~ msgid "Limit"
+#~ msgstr "Limiet"
+
+#~ msgid "The file \"%s\" is succesfully deleted."
+#~ msgstr "Het bestand \"%s\" is verwijderd."
+
+#~ msgid "Change settings for Upload My File plugin."
+#~ msgstr "Wijzig instellingen voor Upload My File plugin."
+
+#~ msgid "An unknown error occurred"
+#~ msgstr "Er is iets verkeerd gegaan"
+
+#~ msgid "File #%s: <a href=\"%s\" target=\"_blank\">%s</a>"
+#~ msgstr "Bestand %s: <a href=\"%s\" target=\"_blank\">%s</a>"
+
+#~ msgid "Upload file for:"
+#~ msgstr "Upload bestand voor:"
+
+#~ msgid "Orderdate"
+#~ msgstr "Besteldatum"
+
+#~ msgid "Ship to"
+#~ msgstr "Verzendgegevens"
+
+#~ msgid "Click to cancel this order"
+#~ msgstr "Klik om deze bestelling te annuleren"
+
+#~ msgid "You have no recent orders."
+#~ msgstr "Je hebt geen recente bestellingen."
+
+#~ msgid ""
+#~ "An order has been created for you on &ldquo;%s&rdquo;. To pay for this "
+#~ "order please use the following link: <a href=\"%s\">Pay</a>"
+#~ msgstr ""
+#~ "Een nieuwe bestelling is voor u geplaatst op &ldquo;%s&rdquo;. Om deze "
+#~ "bestelling te betalen klikt u op de volgende link: <a href=\"%s\">Pay</a>"
+
+#~ msgid "jS F Y"
+#~ msgstr "jS F Y"
