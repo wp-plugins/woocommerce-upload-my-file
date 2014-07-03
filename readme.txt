@@ -3,8 +3,8 @@ Contributors: bpluijms
 Plugin URI: http://wordpress.geev.nl/product/woocommerce-upload-my-file/
 Author URI: http://www.geev.nl
 Tags: woocommerce, file upload
-Requires at least: 3.3
-Tested up to: 3.8
+Requires at least: 3.8
+Tested up to: 3.9.1
 Stable tag: 0.3.1
 License: GPLv2
 
