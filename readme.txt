@@ -31,7 +31,7 @@ For a full list of features, please visit our website.
 
 * Upload customize your products
 * Allow one upload per product
-* Localisation: English, German & Dutch
+* Localisation: English, German, Spanish (not completed) & Dutch
 
 Credit where credit is due: This plugin here is inspired and based on the work of patrickgarman, garmantech and the awesome "WooCommerce Pay to Upload" plugin!
 
@@ -39,6 +39,9 @@ Credit where credit is due: This plugin here is inspired and based on the work o
 
 1. Install WooCommerce Upload My File either via the Wordpress.org plugin directory or by uploading the files to the '/wp-content/plugins/' directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
+3. Go to plugin settings under WooCommerce --> Upload My File
+4. Select allowed file type, max upload size, required order statusses (VERY IMPORTANT!)
+5. Go to a product and select the "Enable" checkbox under "Upload Files" (normally below your product images)
 
 == Upgrade Notice ==
 Please backup first. | We no longer use the template overrides for emails inside woocommerce/upload-my-file/templates/emails. If you're using template overrides for emails inside your theme, you might have to update them.

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WooCommerce Upload My File\n"
-"POT-Creation-Date: 2014-03-12 21:23+0100\n"
-"PO-Revision-Date: 2014-03-12 21:23+0100\n"
+"POT-Creation-Date: 2014-04-16 16:57+0100\n"
+"PO-Revision-Date: 2014-04-16 16:57+0100\n"
 "Last-Translator: Bart Pluijms <info@geev.nl>\n"
 "Language-Team: Geev vormgeeving <info@geev.nl>\n"
 "Language: es\n"
@@ -244,7 +244,11 @@ msgstr "No todos los archivos se hayan cargado correctamente."
 msgid "Your file(s) were uploaded successfully."
 msgstr "Su fichero ha sido adjuntado correctamente."
 
-#: ../inc/umf-funct.php:255 ../templates/myaccount/my-orders.php:91
+#: ../inc/umf-funct.php:255
+#: ../templates/emails/customer-completed-order.php:49
+#: ../templates/emails/customer-note.php:53
+#: ../templates/emails/customer-processing-order.php:49
+#: ../templates/myaccount/my-orders.php:91
 msgid "Upload files"
 msgstr "Adjuntar ficheros"
 
@@ -279,6 +283,82 @@ msgid "Login to upload your file and attach it to your order."
 msgid_plural "Login to upload your files and attach them to your order."
 msgstr[0] "Haga login para subir sus archivos y adjuntarlos a su pedido."
 msgstr[1] "Haga login para subir sus archivos y adjuntarlos a su pedido."
+
+#: ../templates/emails/customer-completed-order.php:14
+#, php-format
+msgid ""
+"Hi there. Your recent order on %s has been completed. Your order details are "
+"shown below for your reference:"
+msgstr ""
+"Su pedido %s ha sido completado. Los detalles del pedido se muestran a "
+"continuación:"
+
+#: ../templates/emails/customer-completed-order.php:18
+#: ../templates/emails/customer-note.php:22
+#: ../templates/emails/customer-processing-order.php:18
+msgid "Order:"
+msgstr "Pedido:"
+
+#: ../templates/emails/customer-completed-order.php:23
+#: ../templates/emails/customer-note.php:27
+#: ../templates/emails/customer-processing-order.php:23
+msgid "Product"
+msgstr "Producto"
+
+#: ../templates/emails/customer-completed-order.php:24
+#: ../templates/emails/customer-note.php:28
+#: ../templates/emails/customer-processing-order.php:24
+msgid "Quantity"
+msgstr "Cantidad"
+
+#: ../templates/emails/customer-completed-order.php:25
+#: ../templates/emails/customer-note.php:29
+#: ../templates/emails/customer-processing-order.php:25
+msgid "Price"
+msgstr "Precio"
+
+#: ../templates/emails/customer-completed-order.php:50
+#: ../templates/emails/customer-note.php:54
+#: ../templates/emails/customer-processing-order.php:50
+#, fuzzy
+msgid "Login to upload your files and attach them to your order."
+msgstr "Haga login para subir sus archivos y adjuntarlos a su pedido."
+
+#: ../templates/emails/customer-completed-order.php:54
+#: ../templates/emails/customer-note.php:59
+#: ../templates/emails/customer-processing-order.php:55
+msgid "Customer details"
+msgstr "Detalle cliente"
+
+#: ../templates/emails/customer-completed-order.php:57
+#: ../templates/emails/customer-note.php:62
+#: ../templates/emails/customer-processing-order.php:58
+msgid "Email:"
+msgstr "E-mail:"
+
+#: ../templates/emails/customer-completed-order.php:60
+#: ../templates/emails/customer-note.php:65
+#: ../templates/emails/customer-processing-order.php:61
+msgid "Tel:"
+msgstr "Tel:"
+
+#: ../templates/emails/customer-note.php:14
+msgid "Hello, a note has just been added to your order:"
+msgstr "Una nota ha sido añadida a su pedido:"
+
+#: ../templates/emails/customer-note.php:18
+msgid "For your reference, your order details are shown below."
+msgstr ""
+"Los detalles del pedido se muestran a continuación, para el numero de "
+"referencia indicado."
+
+#: ../templates/emails/customer-processing-order.php:14
+msgid ""
+"Your order has been received and is now being processed. Your order details "
+"are shown below for your reference:"
+msgstr ""
+"Su pedido ha sido recibido y está siendo procesado. Los detalles se muestran "
+"a continuación para su referencia:"
 
 #: ../templates/myaccount/my-orders.php:26
 msgid "Recent Orders"
@@ -315,49 +395,6 @@ msgstr "Cancelar"
 #: ../templates/myaccount/my-orders.php:109
 msgid "View"
 msgstr "Ver"
-
-#~ msgid ""
-#~ "Hi there. Your recent order on %s has been completed. Your order details "
-#~ "are shown below for your reference:"
-#~ msgstr ""
-#~ "Su pedido %s ha sido completado. Los detalles del pedido se muestran a "
-#~ "continuación:"
-
-#~ msgid "Order:"
-#~ msgstr "Pedido:"
-
-#~ msgid "Product"
-#~ msgstr "Producto"
-
-#~ msgid "Quantity"
-#~ msgstr "Cantidad"
-
-#~ msgid "Price"
-#~ msgstr "Precio"
-
-#~ msgid "Customer details"
-#~ msgstr "Detalle cliente"
-
-#~ msgid "Email:"
-#~ msgstr "E-mail:"
-
-#~ msgid "Tel:"
-#~ msgstr "Tel:"
-
-#~ msgid "Hello, a note has just been added to your order:"
-#~ msgstr "Una nota ha sido añadida a su pedido:"
-
-#~ msgid "For your reference, your order details are shown below."
-#~ msgstr ""
-#~ "Los detalles del pedido se muestran a continuación, para el numero de "
-#~ "referencia indicado."
-
-#~ msgid ""
-#~ "Your order has been received and is now being processed. Your order "
-#~ "details are shown below for your reference:"
-#~ msgstr ""
-#~ "Su pedido ha sido recibido y está siendo procesado. Los detalles se "
-#~ "muestran a continuación para su referencia:"
 
 #~ msgid "General"
 #~ msgstr "Algemeen"
