@@ -1,5 +1,5 @@
 === WooCommerce Upload My File ===
-Contributors: bpluijms
+Contributors: bpluijms, wpfortune
 Plugin URI: http://wordpress.geev.nl/product/woocommerce-upload-my-file/
 Author URI: http://www.geev.nl
 Tags: woocommerce, file upload
