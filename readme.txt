@@ -5,7 +5,7 @@ Author URI: http://www.geev.nl
 Tags: woocommerce, file upload
 Requires at least: 3.8
 Tested up to: 3.9.1
-Stable tag: 0.3.1
+Stable tag: 0.3.2
 License: GPLv2
 
 This plugin adds the possibility to upload a file after an order is completed and attached it to that order.
@@ -59,6 +59,10 @@ Go to WooCommerce > Upload My File, configure and start uploading. Simple!
 
 == Changelog ==
 ***WooCommerce Upload My File***
+= 2014.07.31 - version 0.3.2 =
+* Fixed: Error when strict error reporting is enabled
+* Fixed: Open a uploaded file in order overview also works on localhost now
+
 = 2014.03.12 - version 0.3.1 =
 * Changed & Added: A couple of language strings, so please update your translations.
 * Fix: E-mail link will work from now - Please update your template overrides! We no longer use the template overrides in woocommerce-upload-my-file/templates/emails
