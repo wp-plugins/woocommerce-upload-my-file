@@ -63,18 +63,42 @@ function woocommerce_umf_page() {
     								</th>
     								<td>
 										<?php $statusname=get_option( 'woocommerce_umf_status' );
-										// retrieve all active WooCommerce order statuses
-										$statuses = get_terms( 'shop_order_status', array( 'hide_empty' => false ) );
-										$values = array();
-										$i=0;
-										// * @2.2.1 changed check for order status
-										foreach( $statuses as $status ) {
-										  $values[ $status->slug ] = $status->name;
-										  ?>
-										  <input type=checkbox name="woocommerce_umf_status[<?php echo $i;?>]"  value="<?php echo $status->slug;?>" <?php if(isset($statusname[$i]) && $statusname[$i]==$status->slug) { echo 'checked';}?>> <?php _e($status->name,'woocommerce');?><br>
-										  <?php $i++;
-										}
-										?>
+										 // WC 2.2 support
+                                        if (function_exists('wc_get_order_statuses')) {
+                                            $statuses = wc_get_order_statuses();
+
+                                            ksort($statuses);
+
+                                            $values = array();
+    										$i=0;
+    										// * @2.2.1 changed check for order status
+    										foreach( $statuses as $status => $status_name ) {
+
+                                                $status = str_replace('wc-', '', $status);
+    										    $values[ $status ] = $status_name;
+
+    										  ?>
+    										  <input type=checkbox name="woocommerce_umf_status[<?php echo $i;?>]"  value="<?php echo $status;?>" <?php if(isset($statusname[$i]) && $statusname[$i]==$status) { echo 'checked';}?>> <?php _e($status_name,'woocommerce');?><br>
+    										  <?php $i++;
+    										}
+
+
+
+                                        } else {
+                                            $statuses = get_terms( 'shop_order_status', array( 'hide_empty' => false ) );
+
+                                            $values = array();
+    										$i=0;
+    										// * @2.2.1 changed check for order status
+    										foreach( $statuses as $status ) {
+    										  $values[ $status->slug ] = $status->name;
+    										  ?>
+    										  <input type=checkbox name="woocommerce_umf_status[<?php echo $i;?>]"  value="<?php echo $status->slug;?>" <?php if(isset($statusname[$i]) && $statusname[$i]==$status->slug) { echo 'checked';}?>> <?php _e($status->name,'woocommerce');?><br>
+    										  <?php $i++;
+    										}
+
+                                        }
+                                        ?>
     									<span class="description">
 											<?php _e( 'Specify which order statuses will allow customers to upload files.', 'woocommerce-umf' );?>
 										</span>

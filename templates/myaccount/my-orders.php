@@ -13,13 +13,28 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 global $woocommerce;
 
-$customer_orders = get_posts( array(
-    'numberposts' => -1,
-    'meta_key'    => '_customer_user',
-    'meta_value'  => get_current_user_id(),
-    'post_type'   => 'shop_order',
-    'post_status' => 'publish'
-) );
+if ( version_compare( WOOCOMMERCE_VERSION, "2.2" ) < 0 ) {
+
+    $customer_orders = get_posts( array(
+        'numberposts' => -1,
+        'meta_key'    => '_customer_user',
+        'meta_value'  => get_current_user_id(),
+        'post_type'   => 'shop_order',
+        'post_status' => 'publish'
+    ) );
+
+} else {
+
+    $customer_orders = get_posts( apply_filters( 'woocommerce_my_account_my_orders_query', array(
+    	'numberposts' => -1,
+    	'meta_key'    => '_customer_user',
+    	'meta_value'  => get_current_user_id(),
+    	'post_type'   => wc_get_order_types( 'view-orders' ),
+    	'post_status' => array_keys( wc_get_order_statuses() )
+    ) ) );
+
+}
+
 
 if ( $customer_orders ) : ?>
 
@@ -40,7 +55,12 @@ if ( $customer_orders ) : ?>
 
 		<tbody><?php
 			foreach ( $customer_orders as $customer_order ) {
-				$order = new WC_Order();
+
+                if ( version_compare( WOOCOMMERCE_VERSION, "2.2" ) < 0 ) {
+				    $order = new WC_Order();
+                } else {
+                    $order = get_order();
+                }
 
 				$order->populate( $customer_order );
 
@@ -49,49 +69,55 @@ if ( $customer_orders ) : ?>
 
 				?><tr class="order">
 					<td class="order-number">
-					<?php if ( version_compare( WOOCOMMERCE_VERSION, "2.0.99" ) <= 0 ) { 
+					<?php if ( version_compare( WOOCOMMERCE_VERSION, "2.0.99" ) <= 0 ) {
 						$viewOrderUrl=esc_url( add_query_arg('order', $order->id, get_permalink( woocommerce_get_page_id( 'view_order' ) ) ) );
-					} else { 
+					} else {
 						$viewOrderUrl=$order->get_view_order_url();
 					} ?>
 						<a href="<?php echo $viewOrderUrl; ?>">
 							<?php echo $order->get_order_number(); ?>
 						</a>
 					</td>
-					
-					
+
+
 					<td class="order-date">
 						<time title="<?php echo esc_attr( strtotime( $order->order_date ) ); ?>"><?php echo date_i18n( 'd-m-Y', strtotime( $order->order_date ) ); ?></time>
 					</td>
-					
+
 					<?php if(in_array($order->status, array('on-hold','pending', 'failed','cancelled'))) { ?>
 					<td class="order-total unpaid"><a href="<?php echo esc_url( $order->get_checkout_payment_url() ); ?>" class="pay"><?php echo $order->get_formatted_order_total(); ?></a></td>
 					<?php } else {?>
 					<td class="order-total paid" ><?php echo $order->get_formatted_order_total(); ?></td>
 					<?php } ?>
 					<td class="order-files <?php echo check_for_files($order->id);?>" width="10%">
-					
+
 					<?php if(check_for_files($order->id)=='upload') {
 							echo '<a href="'.$viewOrderUrl.'">'.__( 'Upload', 'woocommerce-umf' ).'</a>';
 						} elseif(check_for_files($order->id)=='blank') { echo '-'; }
 					?>
 					</td><td class="order-status" style="text-align:left; white-space:nowrap;">
-						<?php echo ucfirst( __( $status->name, 'woocommerce' ) ); ?>
+                        <?php
+                        if ( version_compare( WOOCOMMERCE_VERSION, "2.2" ) < 0 ) {
+						    echo ucfirst( __( $status->name, 'woocommerce' ) );
+                        } else {
+                            echo wc_get_order_status_name( $order->get_status() );
+                        }
+                        ?>
 					</td>
 					<td class="order-actions" style="text-align:right; white-space:nowrap;">
-					
-					
+
+
 						<?php
 							$actions = array();
 
 							if(check_for_files($order->id)=='upload') {
-							
+
 								$actions['upload'] = array(
 									'url'  => $viewOrderUrl,
 									'name' => __( 'Upload files', 'woocommerce-umf' )
 								);
 							}
-							
+
 							if ( in_array( $order->status, apply_filters( 'woocommerce_valid_order_statuses_for_payment', array( 'pending', 'failed' ), $order ) ) )
 								$actions['pay'] = array(
 									'url'  => $order->get_checkout_payment_url(),
@@ -116,7 +142,7 @@ if ( $customer_orders ) : ?>
 							}
 						?>
 					</td>
-					
+
 				</tr><?php
 			}
 		?></tbody>
