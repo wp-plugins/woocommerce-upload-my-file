@@ -128,14 +128,18 @@ function woocommerce_umf_page() {
 					<div class="postbox">
 						<h3><?php _e( 'Buy Pro!', 'woocommerce-umf' ); ?></h3>
 						<div class="inside umf-preview">
-							<p><?php echo __( 'Check out our ', 'woocommerce-umf' ); ?> <a href="http://wordpress.geev.nl/product/woocommerce-upload-my-file/">website</a> <?php _e('to find out more about WooCommerce Upload My File Pro.', 'woocommerce-umf' );?></p>
-							<p><?php _e('For only &euro; 29,00 you will get a lot of features and access to our support section.', 'woocommerce-umf' );?></p>
-							<p><?php _e('A couple of features:', 'woocommerce-umf' );?>
+							<p><?php echo __( 'Check out our ', 'woocommerce-umf' ); ?> <a href="http://wpfortune.com/shop/plugins/woocommerce-uploads/">website</a> <?php _e('to find out more about WooCommerce Uploads.', 'woocommerce-umf' );?></p>
+							<p><?php _e('For only &euro; 35,00 you will get a lot of features and access to our support section.', 'woocommerce-umf' );?></p>
+							<p><?php _e('A couple of features:', 'woocommerce-umf' );?></p>
 							<ul style="list-style:square;padding-left:20px;margin-top:-10px;">
 							
+							<li><strong><?php _e('New', 'woocommerce-umf' );?></strong>: <?php _e('Fully customizable upload set on product level', 'woocommerce-umf' );?></li>
+							<li><strong><?php _e('New', 'woocommerce-umf' );?></strong>: <?php _e('Upload files before checkout with our special add-on', 'woocommerce-umf' );?></li>
+							<li><strong><?php _e('New', 'woocommerce-umf' );?></strong>: <?php _e('Choose in which order uploads will appear', 'woocommerce-umf' );?></li>
 							<li><strong><?php _e('New', 'woocommerce-umf' );?></strong>: <?php _e('Use an AJAX Uploader with progress bar', 'woocommerce-umf' );?></li>
-							<li><strong><?php _e('New', 'woocommerce-umf' );?></strong>: <?php _e('Upload LARGE ( > 100 MB) files', 'woocommerce-umf' );?></li>
-							<li><strong><?php _e('New', 'woocommerce-umf' );?></strong>: <?php _e('Send admin notifications after upload', 'woocommerce-umf' );?></li>
+							<li><strong><?php _e('New', 'woocommerce-umf' );?></strong>: <?php _e('Upload LARGE ( > 1GB) files', 'woocommerce-umf' );?></li>
+							<li><?php _e('Product variation support', 'woocommerce-umf' );?></li>
+							<li><?php _e('Send admin notifications after upload', 'woocommerce-umf' );?></li>
 							<li><?php _e('Specify upload titles per product.', 'woocommerce-umf' );?></li><li><?php _e('File preview', 'woocommerce-umf' );?></li>
 							<li><?php _e('Preview thumbnails of uploaded files', 'woocommerce-umf' );?></li><li><?php _e('White or blacklist file types', 'woocommerce-umf' );?></li><li><?php _e('Let users delete files', 'woocommerce-umf' );?></li><li><?php _e('Define your own upload path', 'woocommerce-umf' );?></li></ul>
 						</div>
