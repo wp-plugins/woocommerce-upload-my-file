@@ -1,7 +1,7 @@
 === WooCommerce Upload My File ===
 Contributors: bpluijms, wpfortune
-Plugin URI: http://wordpress.geev.nl/product/woocommerce-upload-my-file/
-Author URI: http://www.geev.nl
+Plugin URI: http://wpfortune.com/shop/plugins/woocommerce-uploads/
+Author URI: http://www.wpfortune.com
 Tags: woocommerce, file upload
 Requires at least: 3.8
 Tested up to: 4.0-beta3
@@ -16,11 +16,11 @@ The _WooCommerce Upload My File plugin_ allows customers to upload a file an att
 
 The plugin adds a new side panel on the order detail page to allow shop managers to download the attached files. 
 
-For more information, check out [our website](http://wordpress.geev.nl/product/woocommerce-upload-my-file/).
+For more information, check out [our website](http://wpfortune.com/shop/plugins/woocommerce-uploads/).
 
 **Free version**
 
-This free version may be used as is. If you want more options and support you can buy WooCommerce Upload My File Pro for only &euro; 29,00.
+This free version may be used as is. If you want more options and support you can buy WooCommerce Uploads for only &euro; 35,00.
 
 **PRO version**
 
@@ -121,14 +121,14 @@ Yes it is, you can place an override file in wp-content/themes/your-theme/woocom
 Normally it is in wp-content/plugins/woocommerce-upload-my-file/templates/
 
 = Where can I find more information about this plugin? =
-You can find more information on [our website](http://wordpress.geev.nl/product/woocommerce-upload-my-file/).
+You can find more information on [our website](http://wpfortune.com/shop/plugins/woocommerce-uploads/).
 
 = Is it possible to upload multiple files =
-WooCommerce Upload My File FREE has only one upload box for one file. If you need to upload multiple files check out [our website](http://wordpress.geev.nl/product/woocommerce-upload-my-file/) for Upload My File PRO.
+WooCommerce Upload My File FREE has only one upload box for one file. If you need to upload multiple files check out [our website](http://wpfortune.com/shop/plugins/woocommerce-uploads/) for WooCommerce Uploads.
 
 = What is the difference between the Free and Pro versions of this plugin? = 
-You may use the free version as it is. When you buy WooCommerce Upload My File PRO you get a lot more options: allow more than one upload per product, white or blacklist file-types, let users delete files, default enable file upload for products and more.
-For a full list of features, please check out [our website](http://wordpress.geev.nl/product/woocommerce-upload-my-file/).
+You may use the free version as it is. When you buy WooCommerce Uploads you get a lot more options: allow more than one upload per product, white or blacklist file-types, let users delete files, default enable file upload for products and more.
+For a full list of features, please check out [our website](http://wpfortune.com/shop/plugins/woocommerce-uploads/).
 
 = Why is there a PRO version? = 
-We want to give everyone the opportunity to use and try our plugins, but if you want to get more options and access to our support section you can buy our PRO version. WooCommerce Upload My File Pro costs only **EUR 29,00**.
+We want to give everyone the opportunity to use and try our plugins, but if you want to get more options and access to our support section you can buy our PRO version. WooCommerce Uploads costs only **EUR 35,00**.
