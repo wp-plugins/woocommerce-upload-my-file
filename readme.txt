@@ -4,7 +4,7 @@ Plugin URI: http://wpfortune.com/shop/plugins/woocommerce-uploads/
 Author URI: http://www.wpfortune.com
 Tags: woocommerce, file upload
 Requires at least: 3.8
-Tested up to: 4.0-beta3
+Tested up to: 4.0
 Stable tag: 0.3.4
 License: GPLv2
 
@@ -35,7 +35,7 @@ For a full list of features, please visit our website.
 
 Credit where credit is due: This plugin here is inspired and based on the work of patrickgarman, garmantech and the awesome "WooCommerce Pay to Upload" plugin!
 
-This plugin is compatible with Wordpress 4.0-beta3 and WooCommerce 2.2.0-bleeding.
+This plugin is compatible with Wordpress 4.0 and WooCommerce 2.2.0-bleeding.
 
 == Installation ==
 
