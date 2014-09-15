@@ -59,7 +59,7 @@ if ( $customer_orders ) : ?>
                 if ( version_compare( WOOCOMMERCE_VERSION, "2.2" ) < 0 ) {
 				    $order = new WC_Order();
                 } else {
-                    $order = get_order();
+                    $order = wc_get_order();
                 }
 
 				$order->populate( $customer_order );

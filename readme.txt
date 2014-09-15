@@ -5,7 +5,7 @@ Author URI: http://www.wpfortune.com
 Tags: woocommerce, file upload
 Requires at least: 3.8
 Tested up to: 4.0
-Stable tag: 0.3.4
+Stable tag: 0.3.5
 License: GPLv2
 
 This plugin adds the possibility to upload a file after an order is completed and attached it to that order.
@@ -35,7 +35,7 @@ For a full list of features, please visit our website.
 
 Credit where credit is due: This plugin here is inspired and based on the work of patrickgarman, garmantech and the awesome "WooCommerce Pay to Upload" plugin!
 
-This plugin is compatible with Wordpress 4.0 and WooCommerce 2.2.0-bleeding.
+This plugin is compatible with Wordpress 4.0 and WooCommerce 2.2
 
 == Installation ==
 
@@ -61,6 +61,9 @@ Go to WooCommerce > Upload My File, configure and start uploading. Simple!
 
 == Changelog ==
 ***WooCommerce Upload My File***
+= 2014.09.15 - version 0.3.5 =
+* Fixed: Fixed bug when using WC 2.2.2
+
 = 2014.09.01 - version 0.3.4 =
 * Fixed: Several small bug fixes
 
