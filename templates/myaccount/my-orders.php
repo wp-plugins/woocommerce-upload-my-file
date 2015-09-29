@@ -57,12 +57,10 @@ if ( $customer_orders ) : ?>
 			foreach ( $customer_orders as $customer_order ) {
 
                 if ( version_compare( WOOCOMMERCE_VERSION, "2.2" ) < 0 ) {
-				    $order = new WC_Order();
+				    $order = new WC_Order($customer_order->ID);
                 } else {
-                    $order = wc_get_order();
+                    $order = wc_get_order($customer_order->ID);
                 }
-
-				$order->populate( $customer_order );
 
 				$status     = get_term_by( 'slug', $order->status, 'shop_order_status' );
 				$item_count = $order->get_item_count();

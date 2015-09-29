@@ -4,8 +4,8 @@ Plugin URI: http://wpfortune.com/shop/plugins/woocommerce-uploads/
 Author URI: http://www.wpfortune.com
 Tags: woocommerce, file upload
 Requires at least: 3.8
-Tested up to: 4.3
-Stable tag: 0.3.5
+Tested up to: 4.4
+Stable tag: 0.3.6
 License: GPLv2
 
 This plugin adds the possibility to upload a file after an order is completed and attached it to that order.
@@ -61,6 +61,9 @@ Go to WooCommerce > Upload My File, configure and start uploading. Simple!
 
 == Changelog ==
 ***WooCommerce Upload My File***
+= 2015.09.29 - version 0.3.6 =
+* Fixed: Fixed bug on order template
+
 = 2014.09.15 - version 0.3.5 =
 * Fixed: Fixed bug when using WC 2.2.2
 
