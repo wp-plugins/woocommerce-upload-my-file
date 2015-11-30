@@ -35,7 +35,7 @@ For a full list of features, please visit our website.
 
 Credit where credit is due: This plugin here is inspired and based on the work of patrickgarman, garmantech and the awesome "WooCommerce Pay to Upload" plugin!
 
-This plugin is compatible with Wordpress 4.3 and WooCommerce 2.3.x.
+This plugin is compatible with Wordpress 4.4 and WooCommerce 2.5.
 
 == Installation ==
 
